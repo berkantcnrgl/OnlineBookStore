@@ -58,5 +58,9 @@ namespace Online_Book_Store
         {
             txtCheckPassword.PasswordChar = '*';
         }
+
+        private void FormSignUp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+        }
     }
 }

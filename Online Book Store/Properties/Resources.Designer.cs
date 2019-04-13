@@ -93,6 +93,16 @@ namespace Online_Book_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DSC100505509 {
+            get {
+                object obj = ResourceManager.GetObject("DSC100505509", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye_256 {
             get {
                 object obj = ResourceManager.GetObject("eye-256", resourceCulture);

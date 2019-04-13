@@ -43,8 +43,16 @@ namespace Online_Book_Store
 
         private void lbSignUp_Click(object sender, EventArgs e)
         {
+            Hide();
             FormSignUp fsn = new FormSignUp();
             fsn.ShowDialog();
+            fsn = null;
+            Show();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

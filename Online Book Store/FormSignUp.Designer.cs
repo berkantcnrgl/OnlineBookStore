@@ -54,7 +54,7 @@
             this.lbName.AutoSize = true;
             this.lbName.BackColor = System.Drawing.Color.Transparent;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbName.ForeColor = System.Drawing.Color.Black;
+            this.lbName.ForeColor = System.Drawing.Color.White;
             this.lbName.Location = new System.Drawing.Point(36, 38);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(47, 25);
@@ -66,7 +66,7 @@
             this.lbSurname.AutoSize = true;
             this.lbSurname.BackColor = System.Drawing.Color.Transparent;
             this.lbSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbSurname.ForeColor = System.Drawing.Color.Black;
+            this.lbSurname.ForeColor = System.Drawing.Color.White;
             this.lbSurname.Location = new System.Drawing.Point(36, 88);
             this.lbSurname.Name = "lbSurname";
             this.lbSurname.Size = new System.Drawing.Size(81, 25);
@@ -78,7 +78,7 @@
             this.lbAdress.AutoSize = true;
             this.lbAdress.BackColor = System.Drawing.Color.Transparent;
             this.lbAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbAdress.ForeColor = System.Drawing.Color.Black;
+            this.lbAdress.ForeColor = System.Drawing.Color.White;
             this.lbAdress.Location = new System.Drawing.Point(36, 138);
             this.lbAdress.Name = "lbAdress";
             this.lbAdress.Size = new System.Drawing.Size(64, 25);
@@ -90,7 +90,7 @@
             this.lbEMail.AutoSize = true;
             this.lbEMail.BackColor = System.Drawing.Color.Transparent;
             this.lbEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbEMail.ForeColor = System.Drawing.Color.Black;
+            this.lbEMail.ForeColor = System.Drawing.Color.White;
             this.lbEMail.Location = new System.Drawing.Point(36, 248);
             this.lbEMail.Name = "lbEMail";
             this.lbEMail.Size = new System.Drawing.Size(80, 25);
@@ -102,7 +102,7 @@
             this.lbUsername.AutoSize = true;
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
             this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbUsername.ForeColor = System.Drawing.Color.Black;
+            this.lbUsername.ForeColor = System.Drawing.Color.White;
             this.lbUsername.Location = new System.Drawing.Point(36, 298);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(119, 25);
@@ -114,7 +114,7 @@
             this.lbPassword.AutoSize = true;
             this.lbPassword.BackColor = System.Drawing.Color.Transparent;
             this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbPassword.ForeColor = System.Drawing.Color.Black;
+            this.lbPassword.ForeColor = System.Drawing.Color.White;
             this.lbPassword.Location = new System.Drawing.Point(36, 348);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(68, 25);
@@ -126,7 +126,7 @@
             this.lbCheckPassword.AutoSize = true;
             this.lbCheckPassword.BackColor = System.Drawing.Color.Transparent;
             this.lbCheckPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbCheckPassword.ForeColor = System.Drawing.Color.Black;
+            this.lbCheckPassword.ForeColor = System.Drawing.Color.White;
             this.lbCheckPassword.Location = new System.Drawing.Point(36, 398);
             this.lbCheckPassword.Name = "lbCheckPassword";
             this.lbCheckPassword.Size = new System.Drawing.Size(218, 25);
@@ -204,12 +204,12 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(331, 445);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
@@ -251,9 +251,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::Online_Book_Store.Properties.Resources.signUpBackGround__1_;
+            this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC100505509;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1082, 639);
+            this.ClientSize = new System.Drawing.Size(685, 639);
             this.Controls.Add(this.pbShowCheckPassword);
             this.Controls.Add(this.pbShowPassword);
             this.Controls.Add(this.btnLogin);
@@ -273,6 +273,7 @@
             this.Controls.Add(this.lbName);
             this.Name = "FormSignUp";
             this.Text = "Kayıt Ekranı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSignUp_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).EndInit();
             this.ResumeLayout(false);
