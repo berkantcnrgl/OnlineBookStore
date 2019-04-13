@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication12
 {
-    class Customer
+    abstract class Customer
     {
         private string customerID;
         private string name;
