@@ -41,10 +41,9 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.txtUserName.Location = new System.Drawing.Point(224, 239);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserName.Location = new System.Drawing.Point(168, 194);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(232, 32);
+            this.txtUserName.Size = new System.Drawing.Size(175, 27);
             this.txtUserName.TabIndex = 0;
             // 
             // lbUserName
@@ -53,10 +52,9 @@
             this.lbUserName.BackColor = System.Drawing.Color.Transparent;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.lbUserName.ForeColor = System.Drawing.Color.White;
-            this.lbUserName.Location = new System.Drawing.Point(43, 240);
-            this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbUserName.Location = new System.Drawing.Point(32, 195);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(145, 29);
+            this.lbUserName.Size = new System.Drawing.Size(108, 22);
             this.lbUserName.TabIndex = 1;
             this.lbUserName.Text = "Kullanıcı Adı";
             // 
@@ -66,20 +64,18 @@
             this.lbPassword.BackColor = System.Drawing.Color.Transparent;
             this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.lbPassword.ForeColor = System.Drawing.Color.White;
-            this.lbPassword.Location = new System.Drawing.Point(43, 312);
-            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPassword.Location = new System.Drawing.Point(32, 254);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(63, 29);
+            this.lbPassword.Size = new System.Drawing.Size(47, 22);
             this.lbPassword.TabIndex = 2;
             this.lbPassword.Text = "Şifre";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.textBox1.Location = new System.Drawing.Point(224, 311);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(168, 253);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 32);
+            this.textBox1.Size = new System.Drawing.Size(175, 27);
             this.textBox1.TabIndex = 3;
             // 
             // btnLogin
@@ -91,10 +87,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(163, 419);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Location = new System.Drawing.Point(168, 318);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(217, 90);
+            this.btnLogin.Size = new System.Drawing.Size(175, 73);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Giriş Yap";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -107,10 +102,9 @@
             this.lbSignUp.BackColor = System.Drawing.Color.Transparent;
             this.lbSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Underline);
             this.lbSignUp.ForeColor = System.Drawing.Color.White;
-            this.lbSignUp.Location = new System.Drawing.Point(219, 555);
-            this.lbSignUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSignUp.Location = new System.Drawing.Point(217, 407);
             this.lbSignUp.Name = "lbSignUp";
-            this.lbSignUp.Size = new System.Drawing.Size(96, 29);
+            this.lbSignUp.Size = new System.Drawing.Size(73, 22);
             this.lbSignUp.TabIndex = 5;
             this.lbSignUp.Text = "Kayıt Ol";
             this.lbSignUp.Click += new System.EventHandler(this.lbSignUp_Click);
@@ -122,19 +116,20 @@
             this.pbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbLogo.BackgroundImage = global::Online_Book_Store.Properties.Resources.siyah;
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(163, 31);
+            this.pbLogo.Location = new System.Drawing.Point(168, 11);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(242, 188);
+            this.pbLogo.Size = new System.Drawing.Size(175, 153);
             this.pbLogo.TabIndex = 6;
             this.pbLogo.TabStop = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.LoginBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(557, 616);
+            this.ClientSize = new System.Drawing.Size(458, 500);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.lbSignUp);
             this.Controls.Add(this.btnLogin);
@@ -143,7 +138,6 @@
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.txtUserName);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.Text = "Giriş Ekranı";
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
