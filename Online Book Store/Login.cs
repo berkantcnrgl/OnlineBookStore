@@ -44,7 +44,7 @@ namespace Online_Book_Store
         private void lbSignUp_Click(object sender, EventArgs e)
         {
             FormSignUp fsn = new FormSignUp();
-            fsn.Show();
+            fsn.ShowDialog();
         }
     }
 }

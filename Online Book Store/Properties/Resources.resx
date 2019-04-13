@@ -118,10 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="822da3f8b3205b5d717169e23ce6c865" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\822da3f8b3205b5d717169e23ce6c865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo455" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo455.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo-1457369804613-52c61a468e7d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1457369804613-52c61a468e7d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signUpBackGround (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signUpBackGround (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bordo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bordo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoginBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signUpBackGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signUpBackGround.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="822da3f8b3205b5d717169e23ce6c865" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\822da3f8b3205b5d717169e23ce6c865.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsadsadsad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsadsadsad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye-256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye-256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo9998" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo9998.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="siyah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siyah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

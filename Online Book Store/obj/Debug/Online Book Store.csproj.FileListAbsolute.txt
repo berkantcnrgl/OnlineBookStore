@@ -8,3 +8,14 @@ C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\o
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online Book Store.csproj.CoreCompileInputs.cache
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online Book Store.exe
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online Book Store.pdb
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\bin\Debug\Online Book Store.exe.config
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\bin\Debug\Online Book Store.exe
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\bin\Debug\Online Book Store.pdb
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online Book Store.csprojResolveAssemblyReference.cache
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.FormLogin.resources
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.Properties.Resources.resources
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online Book Store.csproj.GenerateResource.Cache
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online Book Store.csproj.CoreCompileInputs.cache
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online Book Store.exe
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online Book Store.pdb
+C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.FormSignUp.resources

@@ -62,6 +62,9 @@
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +96,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LoginBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signUpBackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signUpBackGround %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo455.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1457369804613-52c61a468e7d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsadsadsad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo9998.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siyah.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
