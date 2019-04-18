@@ -42,22 +42,24 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.rtxAdress = new System.Windows.Forms.RichTextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.pbShowPassword = new System.Windows.Forms.PictureBox();
             this.pbShowCheckPassword = new System.Windows.Forms.PictureBox();
+            this.pbExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
             this.lbName.BackColor = System.Drawing.Color.Transparent;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbName.ForeColor = System.Drawing.Color.White;
-            this.lbName.Location = new System.Drawing.Point(36, 38);
+            this.lbName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbName.Location = new System.Drawing.Point(100, 100);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(47, 25);
+            this.lbName.Size = new System.Drawing.Size(53, 29);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "İsim";
             // 
@@ -65,11 +67,11 @@
             // 
             this.lbSurname.AutoSize = true;
             this.lbSurname.BackColor = System.Drawing.Color.Transparent;
-            this.lbSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbSurname.ForeColor = System.Drawing.Color.White;
-            this.lbSurname.Location = new System.Drawing.Point(36, 88);
+            this.lbSurname.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbSurname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbSurname.Location = new System.Drawing.Point(100, 150);
             this.lbSurname.Name = "lbSurname";
-            this.lbSurname.Size = new System.Drawing.Size(81, 25);
+            this.lbSurname.Size = new System.Drawing.Size(88, 29);
             this.lbSurname.TabIndex = 1;
             this.lbSurname.Text = "Soyisim";
             // 
@@ -77,11 +79,11 @@
             // 
             this.lbAdress.AutoSize = true;
             this.lbAdress.BackColor = System.Drawing.Color.Transparent;
-            this.lbAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbAdress.ForeColor = System.Drawing.Color.White;
-            this.lbAdress.Location = new System.Drawing.Point(36, 138);
+            this.lbAdress.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbAdress.Location = new System.Drawing.Point(100, 200);
             this.lbAdress.Name = "lbAdress";
-            this.lbAdress.Size = new System.Drawing.Size(64, 25);
+            this.lbAdress.Size = new System.Drawing.Size(69, 29);
             this.lbAdress.TabIndex = 2;
             this.lbAdress.Text = "Adres";
             // 
@@ -89,11 +91,11 @@
             // 
             this.lbEMail.AutoSize = true;
             this.lbEMail.BackColor = System.Drawing.Color.Transparent;
-            this.lbEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbEMail.ForeColor = System.Drawing.Color.White;
-            this.lbEMail.Location = new System.Drawing.Point(36, 248);
+            this.lbEMail.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbEMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbEMail.Location = new System.Drawing.Point(100, 320);
             this.lbEMail.Name = "lbEMail";
-            this.lbEMail.Size = new System.Drawing.Size(80, 25);
+            this.lbEMail.Size = new System.Drawing.Size(87, 29);
             this.lbEMail.TabIndex = 3;
             this.lbEMail.Text = "E-posta";
             // 
@@ -101,11 +103,11 @@
             // 
             this.lbUsername.AutoSize = true;
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(36, 298);
+            this.lbUsername.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbUsername.Location = new System.Drawing.Point(100, 370);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(119, 25);
+            this.lbUsername.Size = new System.Drawing.Size(135, 29);
             this.lbUsername.TabIndex = 4;
             this.lbUsername.Text = "Kullanıcı Adı";
             // 
@@ -113,11 +115,11 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbPassword.ForeColor = System.Drawing.Color.White;
-            this.lbPassword.Location = new System.Drawing.Point(36, 348);
+            this.lbPassword.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbPassword.Location = new System.Drawing.Point(100, 420);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(68, 25);
+            this.lbPassword.Size = new System.Drawing.Size(75, 29);
             this.lbPassword.TabIndex = 5;
             this.lbPassword.Text = "Parola";
             // 
@@ -125,109 +127,114 @@
             // 
             this.lbCheckPassword.AutoSize = true;
             this.lbCheckPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lbCheckPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbCheckPassword.ForeColor = System.Drawing.Color.White;
-            this.lbCheckPassword.Location = new System.Drawing.Point(36, 398);
+            this.lbCheckPassword.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbCheckPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.lbCheckPassword.Location = new System.Drawing.Point(100, 470);
             this.lbCheckPassword.Name = "lbCheckPassword";
-            this.lbCheckPassword.Size = new System.Drawing.Size(218, 25);
+            this.lbCheckPassword.Size = new System.Drawing.Size(244, 29);
             this.lbCheckPassword.TabIndex = 6;
             this.lbCheckPassword.Text = "Parolayı Yeniden Giriniz";
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtName.Location = new System.Drawing.Point(275, 35);
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(365, 100);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(330, 32);
+            this.txtName.Size = new System.Drawing.Size(289, 34);
             this.txtName.TabIndex = 7;
             this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // txtSurname
             // 
-            this.txtSurname.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtSurname.Location = new System.Drawing.Point(275, 82);
+            this.txtSurname.BackColor = System.Drawing.Color.White;
+            this.txtSurname.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSurname.ForeColor = System.Drawing.Color.Black;
+            this.txtSurname.Location = new System.Drawing.Point(365, 150);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(330, 32);
+            this.txtSurname.Size = new System.Drawing.Size(289, 34);
             this.txtSurname.TabIndex = 8;
             this.txtSurname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSurname_KeyPress);
             // 
             // txtCheckPassword
             // 
-            this.txtCheckPassword.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCheckPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtCheckPassword.Location = new System.Drawing.Point(275, 395);
+            this.txtCheckPassword.BackColor = System.Drawing.Color.White;
+            this.txtCheckPassword.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCheckPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtCheckPassword.Location = new System.Drawing.Point(365, 470);
             this.txtCheckPassword.Name = "txtCheckPassword";
             this.txtCheckPassword.PasswordChar = '*';
-            this.txtCheckPassword.Size = new System.Drawing.Size(330, 32);
+            this.txtCheckPassword.Size = new System.Drawing.Size(289, 34);
             this.txtCheckPassword.TabIndex = 10;
             // 
             // txtEMail
             // 
-            this.txtEMail.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtEMail.Location = new System.Drawing.Point(275, 245);
+            this.txtEMail.BackColor = System.Drawing.Color.White;
+            this.txtEMail.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEMail.ForeColor = System.Drawing.Color.Black;
+            this.txtEMail.Location = new System.Drawing.Point(365, 316);
             this.txtEMail.Name = "txtEMail";
-            this.txtEMail.Size = new System.Drawing.Size(330, 32);
+            this.txtEMail.Size = new System.Drawing.Size(289, 34);
             this.txtEMail.TabIndex = 11;
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtUsername.Location = new System.Drawing.Point(275, 295);
+            this.txtUsername.BackColor = System.Drawing.Color.White;
+            this.txtUsername.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.Location = new System.Drawing.Point(365, 370);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(330, 32);
+            this.txtUsername.Size = new System.Drawing.Size(289, 34);
             this.txtUsername.TabIndex = 12;
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.txtPassword.Location = new System.Drawing.Point(275, 345);
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.Location = new System.Drawing.Point(365, 420);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(330, 32);
+            this.txtPassword.Size = new System.Drawing.Size(289, 34);
             this.txtPassword.TabIndex = 13;
             // 
             // rtxAdress
             // 
-            this.rtxAdress.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.rtxAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.rtxAdress.Location = new System.Drawing.Point(275, 130);
+            this.rtxAdress.BackColor = System.Drawing.Color.White;
+            this.rtxAdress.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtxAdress.ForeColor = System.Drawing.Color.Black;
+            this.rtxAdress.Location = new System.Drawing.Point(365, 200);
             this.rtxAdress.Name = "rtxAdress";
-            this.rtxAdress.Size = new System.Drawing.Size(330, 96);
+            this.rtxAdress.Size = new System.Drawing.Size(289, 90);
             this.rtxAdress.TabIndex = 14;
             this.rtxAdress.Text = "";
             // 
-            // btnLogin
+            // btnSignUp
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(331, 445);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(225, 74);
-            this.btnLogin.TabIndex = 15;
-            this.btnLogin.Text = "Giriş Yap";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.MouseEnter += new System.EventHandler(this.btnLogin_MouseEnter);
-            this.btnLogin.MouseLeave += new System.EventHandler(this.btnLogin_MouseLeave);
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSignUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSignUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(457, 553);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(197, 69);
+            this.btnSignUp.TabIndex = 15;
+            this.btnSignUp.Text = "Kayıt Ol";
+            this.btnSignUp.UseVisualStyleBackColor = false;
             // 
             // pbShowPassword
             // 
             this.pbShowPassword.BackColor = System.Drawing.Color.Transparent;
-            this.pbShowPassword.BackgroundImage = global::Online_Book_Store.Properties.Resources.eye_256;
+            this.pbShowPassword.BackgroundImage = global::Online_Book_Store.Properties.Resources.visibility_button;
             this.pbShowPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbShowPassword.Location = new System.Drawing.Point(621, 343);
+            this.pbShowPassword.Location = new System.Drawing.Point(694, 420);
             this.pbShowPassword.Name = "pbShowPassword";
-            this.pbShowPassword.Size = new System.Drawing.Size(41, 39);
+            this.pbShowPassword.Size = new System.Drawing.Size(36, 37);
             this.pbShowPassword.TabIndex = 16;
             this.pbShowPassword.TabStop = false;
             this.pbShowPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbShowPassword_MouseDown);
@@ -236,27 +243,40 @@
             // pbShowCheckPassword
             // 
             this.pbShowCheckPassword.BackColor = System.Drawing.Color.Transparent;
-            this.pbShowCheckPassword.BackgroundImage = global::Online_Book_Store.Properties.Resources.eye_256;
+            this.pbShowCheckPassword.BackgroundImage = global::Online_Book_Store.Properties.Resources.visibility_button;
             this.pbShowCheckPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbShowCheckPassword.Location = new System.Drawing.Point(621, 388);
+            this.pbShowCheckPassword.Location = new System.Drawing.Point(694, 467);
             this.pbShowCheckPassword.Name = "pbShowCheckPassword";
-            this.pbShowCheckPassword.Size = new System.Drawing.Size(41, 39);
+            this.pbShowCheckPassword.Size = new System.Drawing.Size(36, 37);
             this.pbShowCheckPassword.TabIndex = 17;
             this.pbShowCheckPassword.TabStop = false;
             this.pbShowCheckPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbShowCheckPassword_MouseDown);
             this.pbShowCheckPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbShowCheckPassword_MouseUp);
             // 
+            // pbExit
+            // 
+            this.pbExit.BackColor = System.Drawing.Color.Transparent;
+            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.stand_by;
+            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbExit.Location = new System.Drawing.Point(858, 12);
+            this.pbExit.Name = "pbExit";
+            this.pbExit.Size = new System.Drawing.Size(30, 25);
+            this.pbExit.TabIndex = 25;
+            this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            // 
             // FormSignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC100505509;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC1005055091;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(685, 639);
+            this.ClientSize = new System.Drawing.Size(900, 700);
+            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbShowCheckPassword);
             this.Controls.Add(this.pbShowPassword);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.rtxAdress);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -271,11 +291,15 @@
             this.Controls.Add(this.lbAdress);
             this.Controls.Add(this.lbSurname);
             this.Controls.Add(this.lbName);
+            this.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayıt Ekranı";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSignUp_FormClosing);
+            this.Load += new System.EventHandler(this.FormSignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,8 +321,9 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.RichTextBox rtxAdress;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.PictureBox pbShowPassword;
         private System.Windows.Forms.PictureBox pbShowCheckPassword;
+        private System.Windows.Forms.PictureBox pbExit;
     }
 }

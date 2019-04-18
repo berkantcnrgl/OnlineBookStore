@@ -17,18 +17,6 @@ namespace Online_Book_Store
             InitializeComponent();
         }
 
-        private void btnLogin_MouseEnter(object sender, EventArgs e)
-        {
-            btnLogin.ForeColor = Color.White;
-            btnLogin.FlatAppearance.BorderColor = Color.White;
-        }
-
-        private void btnLogin_MouseLeave(object sender, EventArgs e)
-        {
-            btnLogin.ForeColor = Color.Black;
-            btnLogin.FlatAppearance.BorderColor = Color.Black;
-        }
-
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
@@ -59,8 +47,14 @@ namespace Online_Book_Store
             txtCheckPassword.PasswordChar = '*';
         }
 
-        private void FormSignUp_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormSignUp_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

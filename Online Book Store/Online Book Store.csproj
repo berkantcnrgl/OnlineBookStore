@@ -127,5 +127,32 @@
   <ItemGroup>
     <None Include="Resources\DSC100505509.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeiconblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stand-by.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eli-francis-100644-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC1005055091.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

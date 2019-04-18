@@ -17,31 +17,23 @@ namespace Online_Book_Store
             InitializeComponent();
         }
 
-        private void btnLogin_MouseMove(object sender, MouseEventArgs e)
+        private void pbExit_Click(object sender, EventArgs e)
         {
-            btnLogin.FlatAppearance.BorderSize = 3;
-            btnLogin.ForeColor = Color.LightBlue;
-            btnLogin.FlatAppearance.BorderColor = Color.LightBlue;
+            this.Close();
+        }
+    
+
+        private void btnLogin_MouseEnter(object sender, EventArgs e)
+        {
+            btnLogin.ForeColor = Color.FromArgb(0,190,190);
         }
 
         private void btnLogin_MouseLeave(object sender, EventArgs e)
         {
-            btnLogin.FlatAppearance.BorderSize = 1;
             btnLogin.ForeColor = Color.White;
-            btnLogin.FlatAppearance.BorderColor = Color.White;
         }
 
-        private void lbSignUp_MouseEnter(object sender, EventArgs e)
-        {
-            lbSignUp.ForeColor = Color.LightBlue;
-        }
-
-        private void lbSignUp_MouseLeave(object sender, EventArgs e)
-        {
-            lbSignUp.ForeColor = Color.White;
-        }
-
-        private void lbSignUp_Click(object sender, EventArgs e)
+        private void btnSingUp_Click(object sender, EventArgs e)
         {
             Hide();
             FormSignUp fsn = new FormSignUp();
@@ -50,9 +42,9 @@ namespace Online_Book_Store
             Show();
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
+        private void pbMinimize_Click(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

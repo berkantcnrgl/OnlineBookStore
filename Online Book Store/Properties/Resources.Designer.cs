@@ -73,9 +73,39 @@ namespace Online_Book_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bookshelf {
+            get {
+                object obj = ResourceManager.GetObject("bookshelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bordo {
             get {
                 object obj = ResourceManager.GetObject("bordo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel {
+            get {
+                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closeiconblue {
+            get {
+                object obj = ResourceManager.GetObject("closeiconblue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +126,26 @@ namespace Online_Book_Store.Properties {
         internal static System.Drawing.Bitmap DSC100505509 {
             get {
                 object obj = ResourceManager.GetObject("DSC100505509", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DSC1005055091 {
+            get {
+                object obj = ResourceManager.GetObject("DSC1005055091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eli_francis_100644_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("eli-francis-100644-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +193,26 @@ namespace Online_Book_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minimize {
+            get {
+                object obj = ResourceManager.GetObject("minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize__1_ {
+            get {
+                object obj = ResourceManager.GetObject("minimize (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_1457369804613_52c61a468e7d {
             get {
                 object obj = ResourceManager.GetObject("photo-1457369804613-52c61a468e7d", resourceCulture);
@@ -176,6 +246,26 @@ namespace Online_Book_Store.Properties {
         internal static System.Drawing.Bitmap siyah {
             get {
                 object obj = ResourceManager.GetObject("siyah", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stand_by {
+            get {
+                object obj = ResourceManager.GetObject("stand-by", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visibility_button {
+            get {
+                object obj = ResourceManager.GetObject("visibility-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
