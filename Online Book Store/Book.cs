@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    class Book
+    class Book : Product
     {
+        private int page;
+
         private string isbn;
         private string author;
         private string publisher;
-        private int page;
         private string picture;
+        private string content;
+        private string subject;
 
-        public string Isbn 
-       {
+        public string Isbn
+        {
             get
             {
                 return isbn;
@@ -78,5 +81,33 @@ namespace Online_Book_Store
                 picture = value;
             }
         }
+
+        public string Subject
+        {
+            get
+            {
+                return subject;
+            }
+
+            set
+            {
+                subject = value;
+            }
+        }
+
+        public string Content
+        {
+            get
+            {
+                return content;
+            }
+
+            set
+            {
+                content = value;
+            }
+        }
+
+        public Book(string id, string name, double price) : base(id, name, price) { }
     }
 }

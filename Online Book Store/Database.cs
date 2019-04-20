@@ -7,14 +7,28 @@ using System.Data.SqlClient;
 
 namespace Online_Book_Store
 {
-    class Database
+    public class Database
     {
+        private static Database databaseObj;
         private SqlConnection sqlConnection;
         private SqlCommand command;
         private SqlDataReader sqlDataReader;
         public int counter = 0;
 
-        public Database() { }
+        private Database()
+        {
+
+        }
+
+        public static Database DatabaseObj()
+        {
+            if (databaseObj == null)
+            {
+                databaseObj = new Database();
+            }
+
+            return databaseObj;
+        }
 
         private string connectionString = "Data Source=den1.mssql8.gear.host;Initial Catalog = bookstore2; User Id=bookstore2; Password=admin.admin";
 
@@ -54,7 +68,7 @@ namespace Online_Book_Store
 
                 command.ExecuteNonQuery();
             }
-            sqlConnection.Close();       
+            sqlConnection.Close();
         }
 
         public bool usernameControl(string username)
@@ -88,6 +102,6 @@ namespace Online_Book_Store
             return counter;
         }
 
-        
+
     }
 }

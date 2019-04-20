@@ -6,11 +6,68 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    class MusicCD
+    class MusicCD : Product
     {
-        private string singer;
-        enum Type { Romance, HardRock, Country }
+        private int releaseDate;
 
-        public string Singer { get => singer; set => singer = value; }
+        private string singer;
+        private string isbn;
+        private string content;
+
+        enum Type { Pop, Rock, Klasik, Opera, Caz, Blues , Rap}
+
+        public string Isbn
+        {
+            get
+            {
+                return isbn;
+            }
+
+            set
+            {
+                isbn = value;
+            }
+        }
+
+        public string Singer
+        {
+            get
+            {
+                return singer;
+            }
+
+            set
+            {
+                singer = value;
+            }
+        }
+
+        public int ReleaseDate
+        {
+            get
+            {
+                return releaseDate;
+            }
+
+            set
+            {
+                releaseDate = value;
+            }
+        }
+
+        public string Content
+        {
+            get
+            {
+                return content;
+            }
+
+            set
+            {
+                content = value;
+            }
+        }
+
+        public MusicCD(string id, string name, double price) : base(id, name, price) { }
     }
 }

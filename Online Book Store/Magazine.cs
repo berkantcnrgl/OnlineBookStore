@@ -10,10 +10,20 @@ namespace Online_Book_Store
     {
         private string issue;
 
-        public string Issue { get => issue; set => issue = value; }
+        public string Issue
+        {
+            get
+            {
+                return issue;
+            }
+            set
+            {
+                issue = value;
+            }
+        }
 
-        enum Type {Actual, News, Sport, Computer,Technology}
+        enum Type { Gündem, Haber, Spor, Bilişim, Teknoloji, Siyaset , Bilim , Tarih, Yemek}
 
-
+        public Magazine(string id, string name, double price) : base(id, name, price) { }
     }
 }

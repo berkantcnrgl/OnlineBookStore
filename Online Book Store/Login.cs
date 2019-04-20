@@ -12,12 +12,12 @@ namespace Online_Book_Store
 {
     public partial class FormLogin : Form
     {
+        Database database = Database.DatabaseObj();
+
         public FormLogin()
         {
             InitializeComponent();
         }
-
-        Database database;
 
         private void pbExit_Click(object sender, EventArgs e)
         {
@@ -50,7 +50,7 @@ namespace Online_Book_Store
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            database = new Database();
+       
             if(database.passwordControl(txtUsername.Text,txtPassword.Text))
             {
                 MessageBox.Show("Tebrikler Giriş Yaptınız");
@@ -59,8 +59,6 @@ namespace Online_Book_Store
             {
                 MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
             }
-
-
         }
     }
 }

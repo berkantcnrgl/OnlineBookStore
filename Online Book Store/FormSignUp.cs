@@ -13,12 +13,13 @@ namespace Online_Book_Store
 {
     public partial class FormSignUp : Form
     {
+        Database database = Database.DatabaseObj();
+
         public FormSignUp()
         {
             InitializeComponent();
         }
 
-        Database database;
         Customer customer;
         private int id;
 
@@ -93,7 +94,7 @@ namespace Online_Book_Store
             }
             else
             {
-                database = new Database();
+          
 
                 if (database.usernameControl(txtUsername.Text))
                 {
