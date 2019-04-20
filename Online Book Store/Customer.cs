@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication12
+namespace Online_Book_Store
 {
-    abstract class Customer
+    public class Customer
     {
-        private string customerID;
+        private int customerID;
         private string name;
-        private string adress;
+        private string surname;
+        private string address;
         private string email;
         private string username;
         private string password;
 
-        public string CustomerID
+        public int CustomerID
         {
             get
             {
@@ -27,7 +28,6 @@ namespace WindowsFormsApplication12
                 customerID = value;
             }
         }
-
         public string Name
         {
             get
@@ -40,20 +40,18 @@ namespace WindowsFormsApplication12
                 name = value;
             }
         }
-
-        public string Adress
+        public string Address
         {
             get
             {
-                return adress;
+                return address;
             }
 
             set
             {
-                adress = value;
+                address = value;
             }
         }
-
         public string Email
         {
             get
@@ -66,7 +64,6 @@ namespace WindowsFormsApplication12
                 email = value;
             }
         }
-
         public string Username
         {
             get
@@ -79,7 +76,6 @@ namespace WindowsFormsApplication12
                 username = value;
             }
         }
-
         public string Password
         {
             get
@@ -92,14 +88,36 @@ namespace WindowsFormsApplication12
                 password = value;
             }
         }
-        private void printCustomerDetails()
+        public string Surname
         {
-            
+            get
+            {
+                return surname;
+            }
+            set
+            {
+                surname = value;
+            }
         }
-        private void saveCustomer()
+
+        public Customer() { }
+
+        private void printCustomerDetails()
         {
 
         }
+
+        public void saveCustomer(int customerID, string name, string surname, string address, string email, string username, string password)
+        {
+            this.customerID = customerID;
+            this.name = name;
+            this.surname = surname;
+            this.address = address;
+            this.email = email;
+            this.username = username;
+            this.password = password;
+        }
+
         private void printCustomerPurchases()
         {
 
@@ -107,5 +125,5 @@ namespace WindowsFormsApplication12
 
     }
 
-   
+
 }

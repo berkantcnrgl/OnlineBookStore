@@ -46,6 +46,7 @@
             this.pbShowPassword = new System.Windows.Forms.PictureBox();
             this.pbShowCheckPassword = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
+            this.lbError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
@@ -226,6 +227,7 @@
             this.btnSignUp.TabIndex = 15;
             this.btnSignUp.Text = "Kayıt Ol";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // pbShowPassword
             // 
@@ -265,6 +267,17 @@
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.BackColor = System.Drawing.Color.Transparent;
+            this.lbError.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbError.ForeColor = System.Drawing.Color.White;
+            this.lbError.Location = new System.Drawing.Point(100, 33);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(0, 28);
+            this.lbError.TabIndex = 26;
+            // 
             // FormSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -273,6 +286,7 @@
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC1005055091;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 700);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbShowCheckPassword);
             this.Controls.Add(this.pbShowPassword);
@@ -325,5 +339,6 @@
         private System.Windows.Forms.PictureBox pbShowPassword;
         private System.Windows.Forms.PictureBox pbShowCheckPassword;
         private System.Windows.Forms.PictureBox pbExit;
+        private System.Windows.Forms.Label lbError;
     }
 }

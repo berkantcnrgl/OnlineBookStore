@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Online_Book_Store
 {
@@ -16,6 +17,10 @@ namespace Online_Book_Store
         {
             InitializeComponent();
         }
+
+        Database database;
+        Customer customer;
+        private int id;
 
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -49,12 +54,60 @@ namespace Online_Book_Store
 
         private void FormSignUp_Load(object sender, EventArgs e)
         {
-
+            lbError.Text = null;
         }
 
         private void pbExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var address = new System.Net.Mail.MailAddress(email);
+                return address.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            lbError.Text = null;
+
+            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtSurname.Text) || string.IsNullOrWhiteSpace(rtxAdress.Text) || string.IsNullOrWhiteSpace(txtEMail.Text) || string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                lbError.Text = "** Tüm alanları doldurun.";
+            }
+            else if (!IsValidEmail(txtEMail.Text))
+            {
+                lbError.Text = "** Geçersiz e-posta adresi.";
+            }
+            else if (txtPassword.Text != txtCheckPassword.Text)
+            {
+                lbError.Text = "** Şifreler uyuşmuyor.";
+            }
+            else
+            {
+                database = new Database();
+
+                if (database.usernameControl(txtUsername.Text))
+                {
+                    lbError.Text = "** Bu kullanıcı adı daha önceden alınmış.";
+                }
+                else
+                {
+                    customer = new Customer();
+                    id = database.findCounter() + 1;
+                    customer.saveCustomer(id, txtName.Text, txtSurname.Text, rtxAdress.Text, txtEMail.Text, txtUsername.Text, txtPassword.Text);
+                    database.addCustomer(customer);
+                    lbError.Text = "* Kaydınız başarı ile tamamlandı. *";
+                }
+            }
         }
     }
 }

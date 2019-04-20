@@ -17,11 +17,12 @@ namespace Online_Book_Store
             InitializeComponent();
         }
 
+        Database database;
+
         private void pbExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-    
+        } 
 
         private void btnLogin_MouseEnter(object sender, EventArgs e)
         {
@@ -45,6 +46,21 @@ namespace Online_Book_Store
         private void pbMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            database = new Database();
+            if(database.passwordControl(txtUsername.Text,txtPassword.Text))
+            {
+                MessageBox.Show("Tebrikler Giriş Yaptınız");
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
+            }
+
+
         }
     }
 }
