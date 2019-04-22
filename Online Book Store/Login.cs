@@ -50,15 +50,19 @@ namespace Online_Book_Store
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-       
-            if(database.passwordControl(txtUsername.Text,txtPassword.Text))
-            {
-                MessageBox.Show("Tebrikler Giriş Yaptınız");
-            }
-            else
-            {
-                MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
-            }
+
+            //if(database.passwordControl(txtUsername.Text,txtPassword.Text))
+            //{
+            Hide();
+            MainForm main = new MainForm();
+            main.ShowDialog();
+            main = null;
+            Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
+            //}
         }
     }
 }

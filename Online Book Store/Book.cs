@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Online_Book_Store
 {
     class Book : Product
@@ -13,9 +14,7 @@ namespace Online_Book_Store
         private string isbn;
         private string author;
         private string publisher;
-        private string picture;
         private string content;
-        private string subject;
 
         public string Isbn
         {
@@ -69,32 +68,6 @@ namespace Online_Book_Store
             }
         }
 
-        public string Picture
-        {
-            get
-            {
-                return picture;
-            }
-
-            set
-            {
-                picture = value;
-            }
-        }
-
-        public string Subject
-        {
-            get
-            {
-                return subject;
-            }
-
-            set
-            {
-                subject = value;
-            }
-        }
-
         public string Content
         {
             get
@@ -109,5 +82,10 @@ namespace Online_Book_Store
         }
 
         public Book(string id, string name, double price) : base(id, name, price) { }
+
+        public override void ShowDetails()
+        {
+
+        }
     }
 }

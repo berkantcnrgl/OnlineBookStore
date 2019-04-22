@@ -258,11 +258,11 @@
             // pbExit
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.stand_by;
+            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.back;
             this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbExit.Location = new System.Drawing.Point(858, 12);
+            this.pbExit.Location = new System.Drawing.Point(778, 12);
             this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(30, 25);
+            this.pbExit.Size = new System.Drawing.Size(35, 35);
             this.pbExit.TabIndex = 25;
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
@@ -275,7 +275,7 @@
             this.lbError.ForeColor = System.Drawing.Color.White;
             this.lbError.Location = new System.Drawing.Point(100, 33);
             this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(0, 28);
+            this.lbError.Size = new System.Drawing.Size(0, 27);
             this.lbError.TabIndex = 26;
             // 
             // FormSignUp
@@ -285,7 +285,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC1005055091;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(900, 700);
+            this.ClientSize = new System.Drawing.Size(825, 675);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbShowCheckPassword);
