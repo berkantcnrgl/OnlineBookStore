@@ -12,9 +12,21 @@ namespace Online_Book_Store
 {
     public partial class MagazineForm : Form
     {
-        public MagazineForm()
+        Magazine magazine;
+
+        public MagazineForm(Magazine magazine)
         {
             InitializeComponent();
+            this.magazine = magazine;
+            this.Text = magazine.Name;
+            txtName.Text = magazine.Name;
+            txtCategory.Text = magazine.Category;
+            txtPrice.Text = magazine.Price + " TL";
+            txtContent.Text = magazine.Issue;
+            pbMagazine.Image = magazine.Picture;
+            pbMagazine.SizeMode = PictureBoxSizeMode.StretchImage;
+            txtCounter.Text = "1";
+            txtIsbn.Text = magazine.Isbn;
         }
     }
 }

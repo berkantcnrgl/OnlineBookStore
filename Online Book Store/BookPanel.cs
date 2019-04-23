@@ -84,7 +84,8 @@ namespace Online_Book_Store
 
         void Show_DetailsClick(object sender, EventArgs e)
         {
-
+            Logger.logger(book.Name + " Panel Magnifier");
+            book.ShowDetails();
         }
 
         void Add_CartClick(object sender, EventArgs e)

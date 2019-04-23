@@ -45,11 +45,9 @@
             this.btnSignUp = new System.Windows.Forms.Button();
             this.pbShowPassword = new System.Windows.Forms.PictureBox();
             this.pbShowCheckPassword = new System.Windows.Forms.PictureBox();
-            this.pbExit = new System.Windows.Forms.PictureBox();
             this.lbError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // lbName
@@ -255,18 +253,6 @@
             this.pbShowCheckPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbShowCheckPassword_MouseDown);
             this.pbShowCheckPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbShowCheckPassword_MouseUp);
             // 
-            // pbExit
-            // 
-            this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.back;
-            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbExit.Location = new System.Drawing.Point(778, 12);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(35, 35);
-            this.pbExit.TabIndex = 25;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
-            // 
             // lbError
             // 
             this.lbError.AutoSize = true;
@@ -287,7 +273,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(825, 675);
             this.Controls.Add(this.lbError);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbShowCheckPassword);
             this.Controls.Add(this.pbShowPassword);
             this.Controls.Add(this.btnSignUp);
@@ -306,14 +291,13 @@
             this.Controls.Add(this.lbSurname);
             this.Controls.Add(this.lbName);
             this.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayıt Ekranı";
             this.Load += new System.EventHandler(this.FormSignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbShowPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbShowCheckPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,7 +322,6 @@
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.PictureBox pbShowPassword;
         private System.Windows.Forms.PictureBox pbShowCheckPassword;
-        private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Label lbError;
     }
 }

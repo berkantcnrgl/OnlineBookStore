@@ -12,11 +12,26 @@ namespace Online_Book_Store
 {
     public partial class BookForm : Form
     {
-        public BookForm()
+        Book book;
+        public BookForm(Book book)
         {
+            this.book = book;
             InitializeComponent();
+            this.Text = book.Name;
+            txtName.Text = book.Name;
+            txtAuthor.Text = book.Author;
+            txtPublisher.Text = book.Publisher;
+            txtCategory.Text = book.Category;
+            txtPage.Text = book.Page.ToString();
+            txtPrice.Text = book.Price + " TL";
+            txtContent.Text = book.Content;
+            pbBook.Image = book.Picture;
+            txtIsbn.Text = book.Isbn;
+            pbBook.SizeMode = PictureBoxSizeMode.StretchImage;
+            txtCounter.Text = "1";           
         }
 
-      
+
+
     }
 }

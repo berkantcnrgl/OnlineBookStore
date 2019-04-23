@@ -49,9 +49,10 @@
             // pbMagazine
             // 
             this.pbMagazine.BackColor = System.Drawing.Color.Transparent;
-            this.pbMagazine.Location = new System.Drawing.Point(23, 26);
+            this.pbMagazine.Location = new System.Drawing.Point(31, 32);
+            this.pbMagazine.Margin = new System.Windows.Forms.Padding(4);
             this.pbMagazine.Name = "pbMagazine";
-            this.pbMagazine.Size = new System.Drawing.Size(200, 300);
+            this.pbMagazine.Size = new System.Drawing.Size(267, 369);
             this.pbMagazine.TabIndex = 1;
             this.pbMagazine.TabStop = false;
             // 
@@ -62,67 +63,86 @@
             this.lbCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbCounter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbCounter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbCounter.Location = new System.Drawing.Point(229, 343);
+            this.lbCounter.Location = new System.Drawing.Point(305, 422);
+            this.lbCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCounter.Name = "lbCounter";
-            this.lbCounter.Size = new System.Drawing.Size(43, 19);
+            this.lbCounter.Size = new System.Drawing.Size(55, 24);
             this.lbCounter.TabIndex = 37;
             this.lbCounter.Text = "Adet:";
             // 
             // txtCounter
             // 
             this.txtCounter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtCounter.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCounter.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCounter.Location = new System.Drawing.Point(324, 341);
+            this.txtCounter.ForeColor = System.Drawing.Color.White;
+            this.txtCounter.Location = new System.Drawing.Point(432, 420);
+            this.txtCounter.Margin = new System.Windows.Forms.Padding(4);
             this.txtCounter.Name = "txtCounter";
-            this.txtCounter.Size = new System.Drawing.Size(207, 26);
+            this.txtCounter.Size = new System.Drawing.Size(275, 23);
             this.txtCounter.TabIndex = 36;
             // 
             // pbAddCart
             // 
-            this.pbAddCart.Location = new System.Drawing.Point(537, 327);
+            this.pbAddCart.BackgroundImage = global::Online_Book_Store.Properties.Resources.showDetails;
+            this.pbAddCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbAddCart.Location = new System.Drawing.Point(716, 402);
+            this.pbAddCart.Margin = new System.Windows.Forms.Padding(4);
             this.pbAddCart.Name = "pbAddCart";
-            this.pbAddCart.Size = new System.Drawing.Size(40, 40);
+            this.pbAddCart.Size = new System.Drawing.Size(53, 49);
             this.pbAddCart.TabIndex = 35;
             this.pbAddCart.TabStop = false;
             // 
             // txtPrice
             // 
             this.txtPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtPrice.Enabled = false;
+            this.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPrice.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPrice.Location = new System.Drawing.Point(324, 129);
+            this.txtPrice.ForeColor = System.Drawing.Color.White;
+            this.txtPrice.Location = new System.Drawing.Point(432, 159);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(253, 26);
+            this.txtPrice.ReadOnly = true;
+            this.txtPrice.Size = new System.Drawing.Size(336, 23);
             this.txtPrice.TabIndex = 34;
             // 
             // txtIsbn
             // 
             this.txtIsbn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtIsbn.Enabled = false;
+            this.txtIsbn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIsbn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtIsbn.Location = new System.Drawing.Point(324, 94);
+            this.txtIsbn.ForeColor = System.Drawing.Color.White;
+            this.txtIsbn.Location = new System.Drawing.Point(432, 116);
+            this.txtIsbn.Margin = new System.Windows.Forms.Padding(4);
             this.txtIsbn.Name = "txtIsbn";
-            this.txtIsbn.Size = new System.Drawing.Size(253, 26);
+            this.txtIsbn.ReadOnly = true;
+            this.txtIsbn.Size = new System.Drawing.Size(336, 23);
             this.txtIsbn.TabIndex = 33;
             // 
             // txtCategory
             // 
             this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCategory.Enabled = false;
+            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCategory.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategory.Location = new System.Drawing.Point(324, 59);
+            this.txtCategory.ForeColor = System.Drawing.Color.White;
+            this.txtCategory.Location = new System.Drawing.Point(432, 73);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(253, 26);
+            this.txtCategory.ReadOnly = true;
+            this.txtCategory.Size = new System.Drawing.Size(336, 23);
             this.txtCategory.TabIndex = 32;
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtName.Enabled = false;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtName.Location = new System.Drawing.Point(324, 24);
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(432, 30);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(253, 26);
+            this.txtName.ReadOnly = true;
+            this.txtName.Size = new System.Drawing.Size(336, 23);
             this.txtName.TabIndex = 28;
             // 
             // lbCategory
@@ -132,9 +152,10 @@
             this.lbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbCategory.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbCategory.Location = new System.Drawing.Point(229, 61);
+            this.lbCategory.Location = new System.Drawing.Point(305, 75);
+            this.lbCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(60, 19);
+            this.lbCategory.Size = new System.Drawing.Size(77, 24);
             this.lbCategory.TabIndex = 27;
             this.lbCategory.Text = "Konusu:";
             // 
@@ -145,9 +166,10 @@
             this.lbIsbn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbIsbn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbIsbn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbIsbn.Location = new System.Drawing.Point(229, 96);
+            this.lbIsbn.Location = new System.Drawing.Point(305, 118);
+            this.lbIsbn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbIsbn.Name = "lbIsbn";
-            this.lbIsbn.Size = new System.Drawing.Size(57, 19);
+            this.lbIsbn.Size = new System.Drawing.Size(73, 24);
             this.lbIsbn.TabIndex = 23;
             this.lbIsbn.Text = "Barkod:";
             // 
@@ -158,9 +180,10 @@
             this.lbPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbPrice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbPrice.Location = new System.Drawing.Point(229, 131);
+            this.lbPrice.Location = new System.Drawing.Point(305, 161);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(44, 19);
+            this.lbPrice.Size = new System.Drawing.Size(55, 24);
             this.lbPrice.TabIndex = 22;
             this.lbPrice.Text = "Fiyat:";
             // 
@@ -171,21 +194,25 @@
             this.lbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbName.Location = new System.Drawing.Point(229, 26);
+            this.lbName.Location = new System.Drawing.Point(305, 32);
+            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(40, 19);
+            this.lbName.Size = new System.Drawing.Size(49, 24);
             this.lbName.TabIndex = 21;
             this.lbName.Text = "İsim:";
             // 
             // txtContent
             // 
             this.txtContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtContent.Enabled = false;
+            this.txtContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContent.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtContent.Location = new System.Drawing.Point(324, 164);
+            this.txtContent.ForeColor = System.Drawing.Color.White;
+            this.txtContent.Location = new System.Drawing.Point(432, 202);
+            this.txtContent.Margin = new System.Windows.Forms.Padding(4);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(253, 145);
+            this.txtContent.ReadOnly = true;
+            this.txtContent.Size = new System.Drawing.Size(336, 178);
             this.txtContent.TabIndex = 39;
             // 
             // lbContent
@@ -195,17 +222,19 @@
             this.lbContent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbContent.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbContent.Location = new System.Drawing.Point(229, 166);
+            this.lbContent.Location = new System.Drawing.Point(305, 204);
+            this.lbContent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbContent.Name = "lbContent";
-            this.lbContent.Size = new System.Drawing.Size(48, 19);
+            this.lbContent.Size = new System.Drawing.Size(59, 24);
             this.lbContent.TabIndex = 38;
             this.lbContent.Text = "İçerik:";
             // 
             // MagazineForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 400);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(803, 492);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.lbContent);
             this.Controls.Add(this.lbCounter);
@@ -220,6 +249,7 @@
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.pbMagazine);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MagazineForm";
             this.Text = "MagazineForm";
             ((System.ComponentModel.ISupportInitialize)(this.pbMagazine)).EndInit();

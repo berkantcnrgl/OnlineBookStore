@@ -95,7 +95,8 @@ namespace Online_Book_Store
 
         private void panelClick(object sender, EventArgs e)
         {
-
+            Logger.logger(musicCD.Name + " Panel Magnifier");
+            musicCD.ShowDetails();
         }
 
         void playBtnClick(object sender, EventArgs e)

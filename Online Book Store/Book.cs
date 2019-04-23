@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    class Book : Product
+    public class Book : Product
     {
         private int page;
 
@@ -85,7 +85,9 @@ namespace Online_Book_Store
 
         public override void ShowDetails()
         {
-
+            BookForm bookForm = new BookForm(this);
+            bookForm.ShowDialog();
+            bookForm.Dispose();
         }
     }
 }

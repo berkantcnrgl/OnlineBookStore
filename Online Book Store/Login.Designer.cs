@@ -40,12 +40,8 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pbExit = new System.Windows.Forms.PictureBox();
-            this.pbMinimize = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin
@@ -201,30 +197,6 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
-            // pbExit
-            // 
-            this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.stand_by;
-            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbExit.Location = new System.Drawing.Point(1453, 12);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(35, 30);
-            this.pbExit.TabIndex = 8;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
-            // 
-            // pbMinimize
-            // 
-            this.pbMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.pbMinimize.BackgroundImage = global::Online_Book_Store.Properties.Resources.minimize__1_;
-            this.pbMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMinimize.Location = new System.Drawing.Point(1411, 12);
-            this.pbMinimize.Name = "pbMinimize";
-            this.pbMinimize.Size = new System.Drawing.Size(30, 30);
-            this.pbMinimize.TabIndex = 9;
-            this.pbMinimize.TabStop = false;
-            this.pbMinimize.Click += new System.EventHandler(this.pbMinimize_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,11 +204,9 @@
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.bookshelf;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1500, 950);
-            this.Controls.Add(this.pbMinimize);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pnlLogin);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -244,8 +214,6 @@
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,9 +230,7 @@
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.PictureBox pbLogo;
-        private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Button btnSingUp;
-        private System.Windows.Forms.PictureBox pbMinimize;
     }
 }
 

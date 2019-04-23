@@ -42,14 +42,10 @@
             this.flpnlItems = new System.Windows.Forms.FlowLayoutPanel();
             this.cmbProduct = new System.Windows.Forms.ComboBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.pbMinimize = new System.Windows.Forms.PictureBox();
-            this.pbExit = new System.Windows.Forms.PictureBox();
             this.pnlUser.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlUser
@@ -229,7 +225,7 @@
             "Kitap",
             "Dergi",
             "Müzik CD"});
-            this.cmbProduct.Location = new System.Drawing.Point(306, 75);
+            this.cmbProduct.Location = new System.Drawing.Point(311, 51);
             this.cmbProduct.Name = "cmbProduct";
             this.cmbProduct.Size = new System.Drawing.Size(219, 35);
             this.cmbProduct.TabIndex = 13;
@@ -243,35 +239,11 @@
             this.cmbCategory.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbCategory.ForeColor = System.Drawing.Color.White;
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(531, 75);
+            this.cmbCategory.Location = new System.Drawing.Point(536, 51);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(219, 35);
             this.cmbCategory.TabIndex = 14;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
-            // 
-            // pbMinimize
-            // 
-            this.pbMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.pbMinimize.BackgroundImage = global::Online_Book_Store.Properties.Resources.minimize__1_;
-            this.pbMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbMinimize.Location = new System.Drawing.Point(1476, 12);
-            this.pbMinimize.Name = "pbMinimize";
-            this.pbMinimize.Size = new System.Drawing.Size(30, 30);
-            this.pbMinimize.TabIndex = 11;
-            this.pbMinimize.TabStop = false;
-            this.pbMinimize.Click += new System.EventHandler(this.pbMinimize_Click);
-            // 
-            // pbExit
-            // 
-            this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImage = global::Online_Book_Store.Properties.Resources.stand_by;
-            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbExit.Location = new System.Drawing.Point(1512, 12);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(35, 30);
-            this.pbExit.TabIndex = 10;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
             // MainForm
             // 
@@ -283,22 +255,18 @@
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.cmbProduct);
             this.Controls.Add(this.flpnlItems);
-            this.Controls.Add(this.pbMinimize);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pnlLogo);
             this.Controls.Add(this.pnlUser);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "Ana Menü";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnlUser.ResumeLayout(false);
             this.pnlUser.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -315,8 +283,6 @@
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pbMinimize;
-        private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.FlowLayoutPanel flpnlItems;
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.ComboBox cmbProduct;

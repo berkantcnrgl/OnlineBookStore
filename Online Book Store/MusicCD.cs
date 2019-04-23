@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    enum MusicType
+    public enum MusicType
     {
         Pop,
         Rock,
@@ -17,7 +17,7 @@ namespace Online_Book_Store
         Rap
     }
 
-    class MusicCD : Product
+    public class MusicCD : Product
     {
         private int releaseDate;
         private string singer;
@@ -94,7 +94,9 @@ namespace Online_Book_Store
 
         public override void ShowDetails()
         {
-            
+            MusicForm musicForm = new MusicForm(this);
+            musicForm.ShowDialog();
+            musicForm.Dispose();
         }
 
         public static MusicType GetMusicType(string Mtype)

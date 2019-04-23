@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    enum MagazineType
+    public enum MagazineType
     {
         Gündem,
         Haber,
@@ -19,7 +19,7 @@ namespace Online_Book_Store
         Yemek
     }
 
-    class Magazine : Product
+    public class Magazine : Product
     {
         private string issue;
         private MagazineType magazineType;
@@ -65,7 +65,9 @@ namespace Online_Book_Store
 
         public override void ShowDetails()
         {
-
+            MagazineForm magazineForm = new MagazineForm(this);
+            magazineForm.ShowDialog();
+            magazineForm.Dispose();
         }
 
         public static MagazineType GetMagazineType(string Mtype)
