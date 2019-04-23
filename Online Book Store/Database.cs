@@ -34,7 +34,17 @@ namespace Online_Book_Store
 
         private string connectionString = "Data Source=den1.mssql8.gear.host;Initial Catalog = bookstore2; User Id=bookstore2; Password=admin.admin";
 
-        public string ConnectionString { get => connectionString; set => connectionString = value; }
+        public string ConnectionString
+        {
+            get
+            {
+                return connectionString;
+            }
+            set
+            {
+                connectionString = value;
+            }
+        }
 
         public bool passwordControl(string username, string password)
         {
@@ -114,7 +124,7 @@ namespace Online_Book_Store
             Book book;
             while (sqlDataReader.Read())
             {
-                book = new Book("","",0);
+                book = new Book("", "", 0);
                 book.ID = (string)sqlDataReader["Id"];
                 book.Name = (string)sqlDataReader["Name"];
                 book.Author = (string)sqlDataReader["Author"];
@@ -131,7 +141,7 @@ namespace Online_Book_Store
                 }
                 catch (Exception)
                 {
-                    
+
                 }
 
                 booklist.Add(book);
@@ -150,7 +160,7 @@ namespace Online_Book_Store
             MusicCD music;
             while (sqlDataReader.Read())
             {
-                music = new MusicCD("","",0);
+                music = new MusicCD("", "", 0);
                 music.ID = (string)sqlDataReader["Id"];
                 music.Name = (string)sqlDataReader["Name"];
                 music.Singer = (string)sqlDataReader["Singer"];
@@ -158,14 +168,14 @@ namespace Online_Book_Store
                 music.Price = (double)sqlDataReader["Price"];
                 music.ReleaseDate = (int)sqlDataReader["ReleaseDate"];
                 music.Category = MusicCD.GetMusicType((string)sqlDataReader["Type"].ToString().Trim()).ToString();
-                music.Content= (string)sqlDataReader["CdContent"];
+                music.Content = (string)sqlDataReader["CdContent"];
                 try
                 {
                     music.Picture = Image.FromFile(Application.StartupPath + @"\Resources\" + music.ID.Trim() + ".jpg");
                 }
                 catch (Exception)
                 {
-                   
+
                 }
                 musiclist.Add(music);
             }
@@ -182,7 +192,7 @@ namespace Online_Book_Store
             Magazine magazine;
             while (sqlDataReader.Read())
             {
-                magazine = new Magazine("","",0);
+                magazine = new Magazine("", "", 0);
                 magazine.ID = (string)sqlDataReader["Id"];
                 magazine.Name = (string)sqlDataReader["Name"];
                 magazine.Category = Magazine.GetMagazineType((string)sqlDataReader["Type"].ToString().Trim()).ToString();

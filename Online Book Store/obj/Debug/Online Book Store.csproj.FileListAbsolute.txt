@@ -29,3 +29,6 @@ C:\Users\asus\Documents\online-book-store\Online Book Store\obj\Debug\Online_Boo
 C:\Users\asus\Documents\online-book-store\Online Book Store\obj\Debug\Online Book Store.csproj.GenerateResource.Cache
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.FormSignUp.resources
 C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MainForm.resources
+C:\Users\asus\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MainForm.resources
+C:\Users\asus\Documents\online-book-store\Online Book Store\bin\Debug\Online Book Store.exe
+C:\Users\asus\Documents\online-book-store\Online Book Store\bin\Debug\Online Book Store.pdb
