@@ -74,6 +74,7 @@ namespace Online_Book_Store
             Add_Cart.BackgroundImage = Properties.Resources.showDetails;
             Add_Cart.BackgroundImageLayout = ImageLayout.Zoom;
             Add_Cart.Cursor = Cursors.Hand;
+            Add_Cart.BackColor = Color.Transparent;
             Add_Cart.Click += new EventHandler(addCart);
 
             this.Controls[0].Location = new Point(125, 20);// Name label 
