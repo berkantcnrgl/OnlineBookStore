@@ -154,5 +154,19 @@ namespace Online_Book_Store
             cmbCategory.SelectedIndex = 0;
             
         }
+
+        private void btnUserProfile_Click(object sender, EventArgs e)
+        {
+            Customer dataBasedenCekilenCustomer=new Customer();
+         
+            UserProfileForm userProfile = new UserProfileForm(dataBasedenCekilenCustomer);
+           
+
+        }
+
+        private void btnShoppingCart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

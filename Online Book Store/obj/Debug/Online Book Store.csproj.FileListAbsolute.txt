@@ -35,3 +35,7 @@ C:\Users\asus\Documents\online-book-store\Online Book Store\bin\Debug\Online Boo
 C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.BookForm.resources
 C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MagazineForm.resources
 C:\Users\berka\OneDrive\Belgeler\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MusicForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.BookForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MagazineForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MainForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MusicForm.resources

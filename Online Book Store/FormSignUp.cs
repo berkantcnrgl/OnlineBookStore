@@ -107,6 +107,7 @@ namespace Online_Book_Store
                     customer.saveCustomer(id, txtName.Text, txtSurname.Text, rtxAdress.Text, txtEMail.Text, txtUsername.Text, txtPassword.Text);
                     database.addCustomer(customer);
                     lbError.Text = "* Kaydınız başarı ile tamamlandı. *";
+
                 }
             }
         }
