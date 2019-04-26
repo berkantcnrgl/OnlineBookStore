@@ -13,8 +13,6 @@ namespace Online_Book_Store
 {
     public partial class FormSignUp : Form
     {
-        Database database = Database.DatabaseObj();
-
         public FormSignUp()
         {
             InitializeComponent();
@@ -58,11 +56,6 @@ namespace Online_Book_Store
             lbError.Text = null;
         }
 
-        private void pbExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private bool IsValidEmail(string email)
         {
             try
@@ -94,20 +87,17 @@ namespace Online_Book_Store
             }
             else
             {
-          
-
-                if (database.usernameControl(txtUsername.Text))
+                if (FormLogin.DatabaseObject.UsernameControl(txtUsername.Text))
                 {
                     lbError.Text = "** Bu kullanıcı adı daha önceden alınmış.";
                 }
                 else
                 {
                     customer = new Customer();
-                    id = database.findCounter() + 1;
+                    id = FormLogin.DatabaseObject.FindCounter() + 1;
                     customer.saveCustomer(id, txtName.Text, txtSurname.Text, rtxAdress.Text, txtEMail.Text, txtUsername.Text, txtPassword.Text);
-                    database.addCustomer(customer);
+                    FormLogin.DatabaseObject.AddCustomer(customer);
                     lbError.Text = "* Kaydınız başarı ile tamamlandı. *";
-
                 }
             }
         }

@@ -28,7 +28,6 @@ namespace Online_Book_Store
                 isbn = value;
             }
         }
-
         public string Author
         {
             get
@@ -41,7 +40,6 @@ namespace Online_Book_Store
                 author = value;
             }
         }
-
         public string Publisher
         {
             get
@@ -54,7 +52,6 @@ namespace Online_Book_Store
                 publisher = value;
             }
         }
-
         public int Page
         {
             get
@@ -67,7 +64,6 @@ namespace Online_Book_Store
                 page = value;
             }
         }
-
         public string Content
         {
             get

@@ -25,10 +25,12 @@ namespace Online_Book_Store
         List<Product> CurrentProductList;
         PanelProductCreator panelCreator;
         ArrayList productList;
+        public static bool IsAdmin;
 
-        public MainForm()
+        public MainForm(Customer customer)
         {
             InitializeComponent();
+            user = customer;
             CurrentProductList = new List<Product>();
         }
 
@@ -45,6 +47,15 @@ namespace Online_Book_Store
             productList.Add(magazinelist);
             productList.Add(musiclist);
             cmbProduct.SelectedIndex = 0;
+            lbUsername.Text = user.Username;
+            if (IsAdmin == true)
+            {
+                btnAdminProfile.Visible = true;
+            }
+            else
+            {
+                btnAdminProfile.Visible = false;
+            }
         }
 
         private void pbMinimize_Click(object sender, EventArgs e)
@@ -156,17 +167,42 @@ namespace Online_Book_Store
         }
 
         private void btnUserProfile_Click(object sender, EventArgs e)
-        {
-            Customer dataBasedenCekilenCustomer=new Customer();
-         
-            UserProfileForm userProfile = new UserProfileForm(dataBasedenCekilenCustomer);
-           
+        {         
+            UserProfileForm userProfile = new UserProfileForm(user);
+            Logger.logger(" Main Form My Profile");
+            user.printCustomerDetails(user);
 
         }
 
         private void btnShoppingCart_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdminProfile_Click(object sender, EventArgs e)
+        {
+            Logger.logger(" Main Form Root");           
+            AdminProfileForm root = new AdminProfileForm();
+            root.ShowDialog();
+            booklist.Clear();
+            musiclist.Clear();
+            magazinelist.Clear();
+            CurrentProductList.Clear();
+            booklist = FormLogin.DatabaseObject.BookLoader();
+            CurrentProductList.AddRange(booklist);
+            musiclist = FormLogin.DatabaseObject.MusicCDLoader();
+            magazinelist = FormLogin.DatabaseObject.MagazineLoader();
+            productList.Clear();
+            productList.Add(booklist);
+            productList.Add(magazinelist);
+            productList.Add(musiclist);
+            btnAdminProfile.Visible = IsAdmin;
+            cmbProduct_SelectedIndexChanged(cmbProduct, null);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

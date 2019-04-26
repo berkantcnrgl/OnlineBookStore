@@ -8,6 +8,8 @@ namespace Online_Book_Store
 {
     public class Customer
     {
+        private bool isAdmin;
+        private int purchasesCounter;
         private int customerID;
         private string name;
         private string surname;
@@ -16,6 +18,29 @@ namespace Online_Book_Store
         private string username;
         private string password;
 
+        public bool IsAdmin
+        {
+            get
+            {
+                return isAdmin;
+            }
+            set
+            {
+                isAdmin = value;
+            }
+        }
+        public int PurchasesCounter
+        {
+            get
+            {
+                return purchasesCounter;
+            }
+
+            set
+            {
+                purchasesCounter = value;
+            }
+        }
         public int CustomerID
         {
             get
@@ -99,12 +124,15 @@ namespace Online_Book_Store
                 surname = value;
             }
         }
+        
 
         public Customer() { }
 
-        private void printCustomerDetails()
+        public void printCustomerDetails(Customer customer)
         {
-
+            UserProfileForm userForm = new UserProfileForm(customer);
+            userForm.ShowDialog();
+            userForm.Dispose();
         }
 
         public void saveCustomer(int customerID, string name, string surname, string address, string email, string username, string password)
@@ -116,9 +144,10 @@ namespace Online_Book_Store
             this.email = email;
             this.username = username;
             this.password = password;
+            this.isAdmin = false;
         }
 
-        private void printCustomerPurchases()
+        public void printCustomerPurchases()
         {
 
         }

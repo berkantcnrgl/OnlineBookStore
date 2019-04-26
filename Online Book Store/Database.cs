@@ -46,44 +46,34 @@ namespace Online_Book_Store
             }
         }
 
-        public bool passwordControl(string username, string password)
+        public void AddCustomer(Customer customer)
         {
             sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
-            command = new SqlCommand("select *from Customer where Username='" + username + "'and Password='" + password + "' ", sqlConnection);
-            sqlDataReader = command.ExecuteReader();
-            if (sqlDataReader.Read())
+            using (command = new SqlCommand("INSERT INTO [dbo].[Customer] ([Id],[Name],[Surname],[Address],[Email],[Username] ,[Password],[IsAdmin]) VALUES (@Id, @Name, @Surname, @Address, @Email, @Username, @Password,@IsAdmin)", sqlConnection)) 
             {
-                sqlConnection.Close();
-                return true;
-            }
-            else
-            {
-                sqlConnection.Close();
-                return false;
-            }
-        }
-
-        public void addCustomer(Customer customer)
-        {
-            sqlConnection = new SqlConnection(connectionString);
-            sqlConnection.Open();
-            using (command = new SqlCommand("INSERT INTO [dbo].[Customer] ([Id],[Name],[Surname],[Address],[Email],[Username] ,[Password]) VALUES (@Id, @Name, @Surname, @Address, @Email, @Username, @Password)", sqlConnection))
-            {
-                command.Parameters.AddWithValue("Id", customer.CustomerID.ToString().Trim());
+                command.Parameters.AddWithValue("Id", customer.CustomerID);
                 command.Parameters.AddWithValue("Name", customer.Name.Trim());
                 command.Parameters.AddWithValue("Surname", customer.Name.Trim());
                 command.Parameters.AddWithValue("Address", customer.Address.Trim());
                 command.Parameters.AddWithValue("Email", customer.Email.Trim());
                 command.Parameters.AddWithValue("Username", customer.Username.Trim());
                 command.Parameters.AddWithValue("Password", customer.Password.Trim());
-
+                if(customer.IsAdmin==true)
+                {
+                    command.Parameters.AddWithValue("IsAdmin", 1);
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("IsAdmin", 0);
+                }
+                
                 command.ExecuteNonQuery();
             }
             sqlConnection.Close();
         }
 
-        public bool usernameControl(string username)
+        public bool UsernameControl(string username)
         {
             sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
@@ -101,7 +91,7 @@ namespace Online_Book_Store
             }
         }
 
-        public int findCounter()
+        public int FindCounter()
         {
             using (sqlConnection = new SqlConnection(connectionString))
             {
@@ -112,6 +102,98 @@ namespace Online_Book_Store
             }
 
             return counter;
+        }
+
+        public Customer GetCustomer(string username, string password)
+        {
+            Customer customer = null;
+            try
+            {
+                sqlConnection = new SqlConnection(connectionString);
+                sqlConnection.Open();
+                command = new SqlCommand("SELECT * FROM [dbo].[Customer] where Username = @UserName", sqlConnection);
+                command.Parameters.AddWithValue("UserName", username);
+                sqlDataReader = command.ExecuteReader();
+                sqlDataReader.Read();
+
+                if (password == (string)sqlDataReader["Password"].ToString().Trim())
+                {
+                    customer = new Customer();
+                    if (!DBNull.Value.Equals(sqlDataReader["Id"]))
+                    {
+                        customer.CustomerID = (int)sqlDataReader["Id"];
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Name"]))
+                    {
+                        customer.Name = (string)sqlDataReader["Name"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Surname"]))
+                    {
+                        customer.Surname = (string)sqlDataReader["Surname"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Address"]))
+                    {
+                        customer.Address = (string)sqlDataReader["Address"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Email"]))
+                    {
+                        customer.Email = (string)sqlDataReader["Email"].ToString().Trim();
+                    }
+                    customer.Username = (string)sqlDataReader["Username"].ToString().Trim();
+                    customer.Password = (string)sqlDataReader["Password"].ToString().Trim();
+
+                    if (!DBNull.Value.Equals(sqlDataReader["PurchasesCounter"]))
+                    {
+                        customer.PurchasesCounter = (int)sqlDataReader["PurchasesCounter"];
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["IsAdmin"]))
+                    {
+                        if ((int)sqlDataReader["IsAdmin"] == 1)
+                        {
+                            MainForm.IsAdmin = true;
+                            customer.IsAdmin = true;
+                        }
+                        else
+                        {
+                            MainForm.IsAdmin = false;
+                            customer.IsAdmin = false;
+                        }
+                    }
+                   
+                }              
+            }
+            catch (Exception ex)
+            {
+                
+            }
+            sqlConnection.Close();
+            return customer;
+        }
+
+        public void CustomerUpdate(Customer customer)
+        {
+            string updateString = "UPDATE Customer SET Name=@Name,Surname=@Surname,Address=@Address,Email=@Email,Username=@Username,Password=@Password,IsAdmin=@IsAdmin,PurchasesCounter=@PurchasesCounter where Id=@Id";
+            sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            command = new SqlCommand(updateString, sqlConnection);
+            command.Parameters.AddWithValue("Id", customer.CustomerID);
+            command.Parameters.AddWithValue("Name", customer.Name.Trim());
+            command.Parameters.AddWithValue("Surname", customer.Surname.Trim());
+            command.Parameters.AddWithValue("Address", customer.Address.Trim());
+            command.Parameters.AddWithValue("Email", customer.Email.Trim());
+            command.Parameters.AddWithValue("Username", customer.Username.Trim());
+            command.Parameters.AddWithValue("Password", customer.Password.Trim());       
+            command.Parameters.AddWithValue("PurchasesCounter", customer.PurchasesCounter);
+            if (customer.IsAdmin == true)
+            {
+                command.Parameters.AddWithValue("IsAdmin", 1);
+            }
+            else
+            {
+                command.Parameters.AddWithValue("IsAdmin", 0);
+            }
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
         }
 
         public List<Product> BookLoader()

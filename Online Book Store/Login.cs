@@ -12,8 +12,18 @@ namespace Online_Book_Store
 {
     public partial class FormLogin : Form
     {
-        Database database = Database.DatabaseObj();
-
+        private static Database databaseObject = Database.DatabaseObj();
+        internal static Database DatabaseObject
+        {
+            get
+            {
+                return databaseObject;
+            }
+            set
+            {
+                databaseObject = value;
+            }
+        }
         public FormLogin()
         {
             InitializeComponent();
@@ -50,19 +60,25 @@ namespace Online_Book_Store
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
-            //if(database.passwordControl(txtUsername.Text,txtPassword.Text))
-            //{
-            Hide();
-            MainForm main = new MainForm();
-            main.ShowDialog();
-            main = null;
-            Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
-            //}
+            Customer loginedCustomer = new Customer();
+            Customer customer = databaseObject.GetCustomer(txtUsername.Text, txtPassword.Text);
+            if (customer != null)
+            {
+                this.Hide();
+                loginedCustomer = customer;
+                Logger.logger("Login");
+                MainForm mainform = new MainForm(customer);
+                mainform.ShowDialog();
+                mainform = null;
+                GC.Collect();
+                txtUsername.Clear();
+                txtPassword.Clear();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adı veya Şifre yanlış !", "Giriş Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

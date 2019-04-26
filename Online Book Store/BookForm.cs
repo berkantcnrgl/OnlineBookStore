@@ -30,8 +30,5 @@ namespace Online_Book_Store
             pbBook.SizeMode = PictureBoxSizeMode.StretchImage;
             txtCounter.Text = "1";           
         }
-
-
-
     }
 }
