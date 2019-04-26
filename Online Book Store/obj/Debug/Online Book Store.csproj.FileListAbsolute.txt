@@ -39,3 +39,6 @@ C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\o
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MagazineForm.resources
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MainForm.resources
 C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.MusicForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.AdminProfileForm.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.ShoppingCartFormcs.resources
+C:\Users\HypTRoN.DESKTOP-T7D2AKS\Documents\online-book-store\Online Book Store\obj\Debug\Online_Book_Store.UserProfileForm.resources
