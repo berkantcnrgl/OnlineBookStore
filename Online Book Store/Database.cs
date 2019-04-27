@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
@@ -15,12 +16,10 @@ namespace Online_Book_Store
         private SqlConnection sqlConnection;
         private SqlCommand command;
         private SqlDataReader sqlDataReader;
+        private SqlDataAdapter dataAdapter;
         public int counter = 0;
 
-        private Database()
-        {
-
-        }
+        private Database() { }
 
         public static Database DatabaseObj()
         {
@@ -293,6 +292,13 @@ namespace Online_Book_Store
             }
             sqlConnection.Close();
             return magazinelist;
+        }
+
+        public void Refresh(DataSet dataSet)
+        {
+            command = new SqlCommand("SELECT * FROM [Book]; SELECT * FROM [Customer];SELECT * FROM [MusicCD];SELECT * FROM [Magazine];", sqlConnection);
+            dataAdapter = new SqlDataAdapter(command);
+            dataAdapter.Fill(dataSet);
         }
 
     }
