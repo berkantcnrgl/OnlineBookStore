@@ -389,7 +389,15 @@ namespace Online_Book_Store
             command = new SqlCommand(path, sqlConnection);
             for (int i = 0; i < values.Length; i++)
             {
-                command.Parameters.AddWithValue("" + i, values[i]);
+                if(i==2)
+                {
+                    command.Parameters.AddWithValue("" + i, Convert.ToDouble(values[i]));
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("" + i, values[i]);
+                }
+             
             }
             command.ExecuteNonQuery();
             sqlConnection.Close();

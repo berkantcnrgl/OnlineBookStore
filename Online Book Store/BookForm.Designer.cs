@@ -260,6 +260,7 @@
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
             this.txtContent.ReadOnly = true;
+            this.txtContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtContent.Size = new System.Drawing.Size(257, 328);
             this.txtContent.TabIndex = 16;
             // 
@@ -316,7 +317,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(891, 400);
+            this.ClientSize = new System.Drawing.Size(926, 508);
             this.Controls.Add(this.lbCounter);
             this.Controls.Add(this.lbCount);
             this.Controls.Add(this.txtCounter);

@@ -308,6 +308,9 @@ namespace Online_Book_Store
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
+
+            dgvBooks.SelectedCells[0].Selected = false;
+
             if (!checkWhiteSpace(bookTextArray))
             {
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -329,13 +332,15 @@ namespace Online_Book_Store
 
         private void btnAddMagazine_Click(object sender, EventArgs e)
         {
+         
+
             if (!checkWhiteSpace(bookTextArray))
             {
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             string id = "1523201910";
-            id += (dgvBooks.RowCount + 1).ToString().Trim();
+            id += (dgvMagazines.RowCount + 1).ToString().Trim();
             string[] values = new string[magazineTextArray.Length + 1];
             values[0] = id;
             for (int i = 1; i < magazineTextArray.Length + 1; i++)
@@ -350,13 +355,14 @@ namespace Online_Book_Store
 
         private void btnAddMusicCd_Click(object sender, EventArgs e)
         {
+
             if (!checkWhiteSpace(bookTextArray))
             {
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             string id = "1522201910";
-            id += (dgvBooks.RowCount + 1).ToString().Trim();
+            id += (dgvMusicCds.RowCount + 1).ToString().Trim();
             string[] values = new string[musicCDTextArray.Length + 1];
             values[0] = id;
             for (int i = 1; i < musicCDTextArray.Length + 1; i++)
