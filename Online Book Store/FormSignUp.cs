@@ -19,7 +19,7 @@ namespace Online_Book_Store
         }
 
         Customer customer;
-        private int id;
+        private static int id;
 
         private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {

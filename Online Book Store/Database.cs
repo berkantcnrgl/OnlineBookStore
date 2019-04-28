@@ -72,6 +72,62 @@ namespace Online_Book_Store
             sqlConnection.Close();
         }
 
+        public void AddBook(string[] values)
+        {
+            sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            using (command = new SqlCommand("INSERT INTO [dbo].[Book] ([Id],[Name],[Price],[Isbn],[Author],[Publisher] ,[Page],[BookContent],[BookSubject]) VALUES (@Id, @Name, @Price, @Isbn, @Author, @Publisher, @Page,@BookContent,@BookSubject)", sqlConnection))
+            {
+                command.Parameters.AddWithValue("Id", values[0].Trim());
+                command.Parameters.AddWithValue("Name", values[1].Trim());
+                command.Parameters.AddWithValue("Price", Convert.ToDouble(values[2]));
+                command.Parameters.AddWithValue("Isbn", values[3].Trim());
+                command.Parameters.AddWithValue("Author", values[4].Trim());
+                command.Parameters.AddWithValue("Publisher", values[5].Trim());
+                command.Parameters.AddWithValue("Page", values[6].Trim());
+                command.Parameters.AddWithValue("BookContent", values[7].Trim());
+                command.Parameters.AddWithValue("BookSubject", values[8].Trim());
+                command.ExecuteNonQuery();
+            }
+            sqlConnection.Close();
+        }
+
+        public void AddMagazine(string[] values)
+        {
+            sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            using (command = new SqlCommand("INSERT INTO [dbo].[Magazine] ([Id],[Name],[Price],[Type],[Issue],[Isbn]) VALUES (@Id, @Name, @Price, @Type, @Issue, @Isbn)", sqlConnection))
+            {
+                command.Parameters.AddWithValue("Id", values[0].Trim());
+                command.Parameters.AddWithValue("Name", values[1].Trim());
+                command.Parameters.AddWithValue("Price", Convert.ToDouble(values[2]));
+                command.Parameters.AddWithValue("Type", values[3].Trim());
+                command.Parameters.AddWithValue("Issue", values[4].Trim());
+                command.Parameters.AddWithValue("Isbn", values[5].Trim());
+                command.ExecuteNonQuery();
+            }
+            sqlConnection.Close();
+        }
+
+        public void AddMusicCd(string[] values)
+        {
+            sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
+            using (command = new SqlCommand("INSERT INTO [dbo].[MusicCd] ([Id],[Name],[Price],[Singer],[Type],[Isbn] ,[ReleaseDate],[CdContent]) VALUES (@Id, @Name, @Price, @Singer, @Type, @Isbn, @ReleaseDate,@CdContent)", sqlConnection))
+            {
+                command.Parameters.AddWithValue("Id", values[0].Trim());
+                command.Parameters.AddWithValue("Name", values[1].Trim());
+                command.Parameters.AddWithValue("Price", Convert.ToDouble(values[2]));
+                command.Parameters.AddWithValue("Singer", values[3].Trim());
+                command.Parameters.AddWithValue("Type", values[4].Trim());
+                command.Parameters.AddWithValue("Isbn", values[5].Trim());
+                command.Parameters.AddWithValue("ReleaseDate", values[6].Trim());
+                command.Parameters.AddWithValue("CdContent", values[7].Trim());
+                command.ExecuteNonQuery();
+            }
+            sqlConnection.Close();
+        }
+
         public bool UsernameControl(string username)
         {
             sqlConnection = new SqlConnection(connectionString);
@@ -171,11 +227,10 @@ namespace Online_Book_Store
 
         public void CustomerUpdate(Customer customer)
         {
-            string updateString = "UPDATE Customer SET Name=@Name,Surname=@Surname,Address=@Address,Email=@Email,Username=@Username,Password=@Password,IsAdmin=@IsAdmin,PurchasesCounter=@PurchasesCounter where Id=@Id";
+            string updateString = "UPDATE Customer SET Name=@Name,Surname=@Surname,Address=@Address,Email=@Email,Password=@Password,IsAdmin=@IsAdmin,PurchasesCounter=@PurchasesCounter where Username=@Username";
             sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
             command = new SqlCommand(updateString, sqlConnection);
-            command.Parameters.AddWithValue("Id", customer.CustomerID);
             command.Parameters.AddWithValue("Name", customer.Name.Trim());
             command.Parameters.AddWithValue("Surname", customer.Surname.Trim());
             command.Parameters.AddWithValue("Address", customer.Address.Trim());
@@ -299,6 +354,45 @@ namespace Online_Book_Store
             command = new SqlCommand("SELECT * FROM [Book]; SELECT * FROM [Customer];SELECT * FROM [MusicCD];SELECT * FROM [Magazine];", sqlConnection);
             dataAdapter = new SqlDataAdapter(command);
             dataAdapter.Fill(dataSet);
+        }
+
+        public void Delete(string table,string Id)
+        {
+            sqlConnection.Open();
+            string path = "DELETE FROM " + table + " WHERE Id = '" + Id + "'";
+            command = new SqlCommand(path, sqlConnection);
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+
+        public void BookUpdate(string[] values)
+        {
+            string path = "UPDATE Book SET Name=@1,Price=@2,Isbn=@3,Author=@4,Publisher=@5,Page=@6,BookContent=@7,BookSubject=@8 where Id=@0";
+            Update(values, path);
+        }
+
+        public void MagazineUpdate(string[] values)
+        {
+            string path = "UPDATE Magazine SET Name=@1,Price=@2,Type=@3,Issue=@4,Isbn=@5 where Id=@0";
+            Update(values, path);
+        }
+
+        public void MusicCdUpdate(string[] values)
+        {
+            string path = "UPDATE MusicCd SET Name=@1,Price=@2,Singer=@3,Type=@4,Isbn=@5,ReleaseDate=@6,CdContent=@7 where Id=@0";
+            Update(values, path);
+        }
+
+        public void Update(string[] values,string path)
+        {
+            sqlConnection.Open();
+            command = new SqlCommand(path, sqlConnection);
+            for (int i = 0; i < values.Length; i++)
+            {
+                command.Parameters.AddWithValue("" + i, values[i]);
+            }
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
         }
 
     }
