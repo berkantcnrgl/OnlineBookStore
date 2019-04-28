@@ -76,14 +76,14 @@ namespace Online_Book_Store
             btnBookUpdate.Enabled = true;
             btnBookDelete.Enabled = true;
             btnBookImageChange.Enabled = false;
-            if (index == dgvBooks.RowCount - 1)
-            {
-                pbBook.Image = null;
-                btnAddBook.Enabled = true;
-                btnBookUpdate.Enabled = false;
-                btnBookDelete.Enabled = false;
-                btnBookImageChange.Enabled = true;
-            }
+            //if (index == dgvBooks.RowCount - 1)
+            //{
+            //    pbBook.Image = null;
+            //    btnAddBook.Enabled = true;
+            //    btnBookUpdate.Enabled = false;
+            //    btnBookDelete.Enabled = false;
+            //    btnBookImageChange.Enabled = true;
+            //}
             DataGridViewRow row = dgvBooks.Rows[index];
             DataGridViewCellCollection cells = row.Cells;
             txtBookName.Text = cells[1].Value.ToString().Trim();
@@ -94,18 +94,17 @@ namespace Online_Book_Store
             txtBookPage.Text = cells[6].Value.ToString().Trim();
             txtBookContent.Text = cells[7].Value.ToString().Trim();
             txtBookCategory.Text = cells[8].Value.ToString().Trim();
-            if (index != dgvBooks.RowCount - 1)
+
+            try
             {
-                try
-                {
-                    pbBook.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
-                    pbBook.BackgroundImageLayout = ImageLayout.Stretch;
-                }
-                catch (Exception)
-                {
-                    pbBook.Image = null;
-                }
+                pbBook.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
+                pbBook.BackgroundImageLayout = ImageLayout.Stretch;
             }
+            catch (Exception)
+            {
+                pbBook.Image = null;
+            }
+
         }
 
         private void dgvMagazines_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -115,14 +114,14 @@ namespace Online_Book_Store
             btnMagazineImage.Enabled = true;
             btnDeleteMagazine.Enabled = true;
             btnMagazineImage.Enabled = false;
-            if (index == dgvMagazines.RowCount - 1)
-            {
-                pbMagazineImage.Image = null;
-                btnAddMagazine.Enabled = true;
-                btnDeleteMagazine.Enabled = false;
-                btnUpdateMagazine.Enabled = false;
-                btnMagazineImage.Enabled = true;
-            }
+            //  if (index == dgvMagazines.RowCount - 1)
+            //{
+            //pbMagazineImage.Image = null;
+            //btnAddMagazine.Enabled = true;
+            //btnDeleteMagazine.Enabled = false;
+            //btnUpdateMagazine.Enabled = false;
+            //btnMagazineImage.Enabled = true;
+            //}
             DataGridViewRow row = dgvMagazines.Rows[index];
             DataGridViewCellCollection cells = row.Cells;
             txtMagazineName.Text = cells[1].Value.ToString().Trim();
@@ -130,17 +129,15 @@ namespace Online_Book_Store
             txtMagazineCategory.Text = cells[3].Value.ToString().Trim();
             txtMagazineIsbn.Text = cells[4].Value.ToString().Trim();
             txtMagazineIssue.Text = cells[5].Value.ToString().Trim();
-            if (index != dgvMagazines.RowCount - 1)
+
+            try
             {
-                try
-                {
-                    pbMagazineImage.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
-                    pbMagazineImage.BackgroundImageLayout = ImageLayout.Stretch;
-                }
-                catch (Exception)
-                {
-                    pbMagazineImage.Image = null;
-                }
+                pbMagazineImage.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
+                pbMagazineImage.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            catch (Exception)
+            {
+                pbMagazineImage.Image = null;
             }
         }
 
@@ -151,14 +148,14 @@ namespace Online_Book_Store
             btnUpdateMusicCd.Enabled = true;
             btnDeleteMusicCd.Enabled = true;
             btnMusicCdImage.Enabled = false;
-            if (index == dgvMusicCds.RowCount - 1)
-            {
-                pbMusicCdImage.Image = null;
-                btnAddMusicCd.Enabled = true;
-                btnUpdateMusicCd.Enabled = false;
-                btnDeleteMusicCd.Enabled = false;
-                btnMusicCdImage.Enabled = true;
-            }
+            //if (index == dgvMusicCds.RowCount - 1)
+            //{
+            //    pbMusicCdImage.Image = null;
+            //    btnAddMusicCd.Enabled = true;
+            //    btnUpdateMusicCd.Enabled = false;
+            //    btnDeleteMusicCd.Enabled = false;
+            //    btnMusicCdImage.Enabled = true;
+            //}
             DataGridViewRow row = dgvMusicCds.Rows[index];
             DataGridViewCellCollection cells = row.Cells;
             txtMusicCdName.Text = cells[1].Value.ToString();
@@ -168,18 +165,17 @@ namespace Online_Book_Store
             txtMusicCdSinger.Text = cells[5].Value.ToString();
             txtMusicCdCategory.Text = cells[6].Value.ToString();
             txtMusicCdContent.Text = cells[7].Value.ToString();
-            if (index != dgvMusicCds.RowCount - 1)
+
+            try
             {
-                try
-                {
-                    pbMusicCdImage.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
-                    pbMusicCdImage.BackgroundImageLayout = ImageLayout.Stretch;
-                }
-                catch (Exception)
-                {
-                    pbMusicCdImage.Image = null;
-                }
+                pbMusicCdImage.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
+                pbMusicCdImage.BackgroundImageLayout = ImageLayout.Stretch;
             }
+            catch (Exception)
+            {
+                pbMusicCdImage.Image = null;
+            }
+
         }
 
         private void tabctrlAdmin_SelectedIndexChanged(object sender, EventArgs e)
@@ -206,6 +202,11 @@ namespace Online_Book_Store
                 dgvMusicCds.ClearSelection();
                 dgvMusicCds_CellClick(dgvMusicCds, a);
             }
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

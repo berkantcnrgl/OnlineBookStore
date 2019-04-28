@@ -12,6 +12,13 @@ namespace Online_Book_Store
         public Label name;
         public PictureBox Picture;
         public PictureBox Add_Cart;
-        public PictureBox Show_Details;       
+        public PictureBox Show_Details;
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ResumeLayout(false);
+
+        }
     }
 }

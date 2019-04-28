@@ -58,9 +58,10 @@
             this.pnlLogin.Controls.Add(this.lbUsername);
             this.pnlLogin.Controls.Add(this.txtUsername);
             this.pnlLogin.Controls.Add(this.pbLogo);
-            this.pnlLogin.Location = new System.Drawing.Point(500, 125);
+            this.pnlLogin.Location = new System.Drawing.Point(375, 102);
+            this.pnlLogin.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(500, 700);
+            this.pnlLogin.Size = new System.Drawing.Size(375, 569);
             this.pnlLogin.TabIndex = 7;
             // 
             // btnSingUp
@@ -74,9 +75,10 @@
             this.btnSingUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSingUp.Font = new System.Drawing.Font("Calibri", 12.8F);
             this.btnSingUp.ForeColor = System.Drawing.Color.White;
-            this.btnSingUp.Location = new System.Drawing.Point(188, 584);
+            this.btnSingUp.Location = new System.Drawing.Point(141, 474);
+            this.btnSingUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnSingUp.Name = "btnSingUp";
-            this.btnSingUp.Size = new System.Drawing.Size(119, 40);
+            this.btnSingUp.Size = new System.Drawing.Size(89, 32);
             this.btnSingUp.TabIndex = 15;
             this.btnSingUp.Text = "Kayıt Ol";
             this.btnSingUp.UseVisualStyleBackColor = false;
@@ -85,19 +87,21 @@
             // txtDesign4
             // 
             this.txtDesign4.Enabled = false;
-            this.txtDesign4.Location = new System.Drawing.Point(325, 605);
+            this.txtDesign4.Location = new System.Drawing.Point(244, 492);
+            this.txtDesign4.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesign4.Multiline = true;
             this.txtDesign4.Name = "txtDesign4";
-            this.txtDesign4.Size = new System.Drawing.Size(135, 1);
+            this.txtDesign4.Size = new System.Drawing.Size(102, 2);
             this.txtDesign4.TabIndex = 14;
             // 
             // txtDesign3
             // 
             this.txtDesign3.Enabled = false;
-            this.txtDesign3.Location = new System.Drawing.Point(33, 605);
+            this.txtDesign3.Location = new System.Drawing.Point(25, 492);
+            this.txtDesign3.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesign3.Multiline = true;
             this.txtDesign3.Name = "txtDesign3";
-            this.txtDesign3.Size = new System.Drawing.Size(135, 1);
+            this.txtDesign3.Size = new System.Drawing.Size(102, 2);
             this.txtDesign3.TabIndex = 12;
             // 
             // btnLogin
@@ -110,9 +114,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(150, 457);
+            this.btnLogin.Location = new System.Drawing.Point(112, 371);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(200, 75);
+            this.btnLogin.Size = new System.Drawing.Size(150, 61);
             this.btnLogin.TabIndex = 11;
             this.btnLogin.Text = "Giriş Yap";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -123,10 +128,11 @@
             // txtDesign2
             // 
             this.txtDesign2.Enabled = false;
-            this.txtDesign2.Location = new System.Drawing.Point(46, 382);
+            this.txtDesign2.Location = new System.Drawing.Point(34, 310);
+            this.txtDesign2.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesign2.Multiline = true;
             this.txtDesign2.Name = "txtDesign2";
-            this.txtDesign2.Size = new System.Drawing.Size(427, 1);
+            this.txtDesign2.Size = new System.Drawing.Size(321, 2);
             this.txtDesign2.TabIndex = 10;
             // 
             // lbPassword
@@ -135,9 +141,10 @@
             this.lbPassword.BackColor = System.Drawing.Color.Transparent;
             this.lbPassword.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbPassword.ForeColor = System.Drawing.Color.White;
-            this.lbPassword.Location = new System.Drawing.Point(41, 347);
+            this.lbPassword.Location = new System.Drawing.Point(31, 282);
+            this.lbPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(63, 29);
+            this.lbPassword.Size = new System.Drawing.Size(50, 23);
             this.lbPassword.TabIndex = 9;
             this.lbPassword.Text = "Şifre:";
             // 
@@ -147,19 +154,21 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(188, 349);
+            this.txtPassword.Location = new System.Drawing.Point(141, 284);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(285, 27);
+            this.txtPassword.Size = new System.Drawing.Size(214, 22);
             this.txtPassword.TabIndex = 8;
             // 
             // txtDesign1
             // 
             this.txtDesign1.Enabled = false;
-            this.txtDesign1.Location = new System.Drawing.Point(46, 317);
+            this.txtDesign1.Location = new System.Drawing.Point(34, 258);
+            this.txtDesign1.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesign1.Multiline = true;
             this.txtDesign1.Name = "txtDesign1";
-            this.txtDesign1.Size = new System.Drawing.Size(427, 1);
+            this.txtDesign1.Size = new System.Drawing.Size(321, 2);
             this.txtDesign1.TabIndex = 7;
             // 
             // lbUsername
@@ -168,9 +177,10 @@
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
             this.lbUsername.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(41, 285);
+            this.lbUsername.Location = new System.Drawing.Point(31, 232);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(141, 29);
+            this.lbUsername.Size = new System.Drawing.Size(107, 23);
             this.lbUsername.TabIndex = 4;
             this.lbUsername.Text = "Kullanıcı Adı:";
             // 
@@ -180,9 +190,10 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold);
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(188, 287);
+            this.txtUsername.Location = new System.Drawing.Point(141, 233);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(284, 27);
+            this.txtUsername.Size = new System.Drawing.Size(213, 22);
             this.txtUsername.TabIndex = 3;
             // 
             // pbLogo
@@ -190,24 +201,27 @@
             this.pbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbLogo.BackgroundImage = global::Online_Book_Store.Properties.Resources.siyah;
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(150, 50);
+            this.pbLogo.Location = new System.Drawing.Point(112, 41);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(200, 160);
+            this.pbLogo.Size = new System.Drawing.Size(150, 130);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.btnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.bookshelf;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1500, 950);
+            this.ClientSize = new System.Drawing.Size(1125, 772);
             this.Controls.Add(this.pnlLogin);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Ekranı";

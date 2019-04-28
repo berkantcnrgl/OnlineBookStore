@@ -58,7 +58,7 @@
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbName.Location = new System.Drawing.Point(100, 100);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(53, 29);
+            this.lbName.Size = new System.Drawing.Size(43, 23);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "İsim";
             // 
@@ -70,7 +70,7 @@
             this.lbSurname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbSurname.Location = new System.Drawing.Point(100, 150);
             this.lbSurname.Name = "lbSurname";
-            this.lbSurname.Size = new System.Drawing.Size(88, 29);
+            this.lbSurname.Size = new System.Drawing.Size(69, 23);
             this.lbSurname.TabIndex = 1;
             this.lbSurname.Text = "Soyisim";
             // 
@@ -82,7 +82,7 @@
             this.lbAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbAdress.Location = new System.Drawing.Point(100, 200);
             this.lbAdress.Name = "lbAdress";
-            this.lbAdress.Size = new System.Drawing.Size(69, 29);
+            this.lbAdress.Size = new System.Drawing.Size(55, 23);
             this.lbAdress.TabIndex = 2;
             this.lbAdress.Text = "Adres";
             // 
@@ -94,7 +94,7 @@
             this.lbEMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbEMail.Location = new System.Drawing.Point(100, 320);
             this.lbEMail.Name = "lbEMail";
-            this.lbEMail.Size = new System.Drawing.Size(87, 29);
+            this.lbEMail.Size = new System.Drawing.Size(68, 23);
             this.lbEMail.TabIndex = 3;
             this.lbEMail.Text = "E-posta";
             // 
@@ -106,7 +106,7 @@
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbUsername.Location = new System.Drawing.Point(100, 370);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(135, 29);
+            this.lbUsername.Size = new System.Drawing.Size(102, 23);
             this.lbUsername.TabIndex = 4;
             this.lbUsername.Text = "Kullanıcı Adı";
             // 
@@ -118,7 +118,7 @@
             this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbPassword.Location = new System.Drawing.Point(100, 420);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(75, 29);
+            this.lbPassword.Size = new System.Drawing.Size(59, 23);
             this.lbPassword.TabIndex = 5;
             this.lbPassword.Text = "Parola";
             // 
@@ -130,7 +130,7 @@
             this.lbCheckPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.lbCheckPassword.Location = new System.Drawing.Point(100, 470);
             this.lbCheckPassword.Name = "lbCheckPassword";
-            this.lbCheckPassword.Size = new System.Drawing.Size(244, 29);
+            this.lbCheckPassword.Size = new System.Drawing.Size(189, 23);
             this.lbCheckPassword.TabIndex = 6;
             this.lbCheckPassword.Text = "Parolayı Yeniden Giriniz";
             // 
@@ -141,7 +141,7 @@
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(365, 100);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(289, 34);
+            this.txtName.Size = new System.Drawing.Size(289, 29);
             this.txtName.TabIndex = 7;
             this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
@@ -152,7 +152,7 @@
             this.txtSurname.ForeColor = System.Drawing.Color.Black;
             this.txtSurname.Location = new System.Drawing.Point(365, 150);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(289, 34);
+            this.txtSurname.Size = new System.Drawing.Size(289, 29);
             this.txtSurname.TabIndex = 8;
             this.txtSurname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSurname_KeyPress);
             // 
@@ -164,7 +164,7 @@
             this.txtCheckPassword.Location = new System.Drawing.Point(365, 470);
             this.txtCheckPassword.Name = "txtCheckPassword";
             this.txtCheckPassword.PasswordChar = '*';
-            this.txtCheckPassword.Size = new System.Drawing.Size(289, 34);
+            this.txtCheckPassword.Size = new System.Drawing.Size(289, 29);
             this.txtCheckPassword.TabIndex = 10;
             // 
             // txtEMail
@@ -174,7 +174,7 @@
             this.txtEMail.ForeColor = System.Drawing.Color.Black;
             this.txtEMail.Location = new System.Drawing.Point(365, 316);
             this.txtEMail.Name = "txtEMail";
-            this.txtEMail.Size = new System.Drawing.Size(289, 34);
+            this.txtEMail.Size = new System.Drawing.Size(289, 29);
             this.txtEMail.TabIndex = 11;
             // 
             // txtUsername
@@ -184,7 +184,7 @@
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(365, 370);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(289, 34);
+            this.txtUsername.Size = new System.Drawing.Size(289, 29);
             this.txtUsername.TabIndex = 12;
             // 
             // txtPassword
@@ -195,7 +195,7 @@
             this.txtPassword.Location = new System.Drawing.Point(365, 420);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(289, 34);
+            this.txtPassword.Size = new System.Drawing.Size(289, 29);
             this.txtPassword.TabIndex = 13;
             // 
             // rtxAdress
@@ -261,13 +261,15 @@
             this.lbError.ForeColor = System.Drawing.Color.White;
             this.lbError.Location = new System.Drawing.Point(100, 33);
             this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(0, 27);
+            this.lbError.Size = new System.Drawing.Size(0, 22);
             this.lbError.TabIndex = 26;
             // 
             // FormSignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Online_Book_Store.Properties.Resources.DSC1005055091;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

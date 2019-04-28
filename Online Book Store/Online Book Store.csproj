@@ -145,6 +145,9 @@
     <EmbeddedResource Include="MusicForm.resx">
       <DependentUpon>MusicForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PanelProduct.resx">
+      <DependentUpon>PanelProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
