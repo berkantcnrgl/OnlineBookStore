@@ -155,13 +155,13 @@ namespace Online_Book_Store
                 btnMusicCdImage.Enabled = true;
                 DataGridViewRow row = dgvMusicCds.Rows[index];
                 DataGridViewCellCollection cells = row.Cells;
-                txtMusicCdName.Text = cells[1].Value.ToString();
-                txtMusicCdPrice.Text = cells[2].Value.ToString();
-                txtMusicCdSinger.Text = cells[3].Value.ToString();
-                txtMusicCdCategory.Text = cells[4].Value.ToString();
-                txtMusicCdIsbn.Text = cells[5].Value.ToString();
-                txtMusicCdReleaseDate.Text = cells[6].Value.ToString();
-                txtMusicCdContent.Text = cells[7].Value.ToString();
+                txtMusicCdName.Text = cells[1].Value.ToString().Trim();
+                txtMusicCdPrice.Text = cells[2].Value.ToString().Trim();
+                txtMusicCdSinger.Text = cells[3].Value.ToString().Trim();
+                txtMusicCdCategory.Text = cells[4].Value.ToString().Trim();
+                txtMusicCdIsbn.Text = cells[5].Value.ToString().Trim();
+                txtMusicCdReleaseDate.Text = cells[6].Value.ToString().Trim();
+                txtMusicCdContent.Text = cells[7].Value.ToString().Trim();
                 try
                 {
                     pbMusicCdImage.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Resources\" + cells[0].Value.ToString().Trim() + ".jpg");
@@ -268,8 +268,8 @@ namespace Online_Book_Store
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            DataGridViewRow row = dgvBooks.Rows[index];
-            string[] values = { row.Cells[0].Value.ToString().Trim(), txtBookName.Text.Trim(),txtBookPrice.Text.Trim(), txtBookIsbn.Text.Trim(),
+
+            string[] values = {dgvBooks.CurrentRow.Cells[0].Value.ToString().Trim(), txtBookName.Text.Trim(),txtBookPrice.Text.Trim(), txtBookIsbn.Text.Trim(),
                 txtBookAuthor.Text.Trim(), txtBookPublisher.Text.Trim(),txtBookPage.Text.Trim(), txtBookContent.Text.Trim(), txtBookCategory.Text.Trim() };
             FormLogin.DatabaseObject.BookUpdate(values);
             dataset.Clear();
@@ -283,8 +283,8 @@ namespace Online_Book_Store
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            DataGridViewRow row = dgvMagazines.Rows[index];
-            string[] values = { row.Cells[0].Value.ToString().Trim(), txtMagazineName.Text.Trim(), txtMagazinePrice.Text.Trim(), txtMagazineCategory.Text.Trim(),
+
+            string[] values = {dgvMagazines.CurrentRow.Cells[0].Value.ToString().Trim(), txtMagazineName.Text.Trim(), txtMagazinePrice.Text.Trim(), txtMagazineCategory.Text.Trim(),
                 txtMagazineIssue.Text.Trim(), txtMagazineIsbn.Text.Trim() };
             FormLogin.DatabaseObject.MagazineUpdate(values);
             dataset.Clear();
@@ -298,8 +298,8 @@ namespace Online_Book_Store
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            DataGridViewRow row = dgvMusicCds.Rows[index];
-            string[] values = { row.Cells[0].Value.ToString().Trim(), txtMusicCdName.Text.Trim(),txtMusicCdPrice.Text.Trim(), txtMusicCdSinger.Text.Trim(),
+
+            string[] values = { dgvMusicCds.CurrentRow.Cells[0].Value.ToString().Trim(), txtMusicCdName.Text.Trim(),txtMusicCdPrice.Text.Trim(), txtMusicCdSinger.Text.Trim(),
                 txtMusicCdCategory.Text.Trim(), txtMusicCdIsbn.Text.Trim(),txtMusicCdReleaseDate.Text.Trim(),txtMusicCdContent.Text.Trim()};
             FormLogin.DatabaseObject.MusicCdUpdate(values);
             dataset.Clear();
@@ -317,8 +317,8 @@ namespace Online_Book_Store
                 return;
             }
             string id = "1521201910";
-            id += (dgvBooks.RowCount + 1).ToString().Trim();        
-            string[] values = new string[bookTextArray.Length+1];
+            id += (dgvBooks.RowCount + 1).ToString().Trim();
+            string[] values = new string[bookTextArray.Length + 1];
             values[0] = id;
             for (int i = 1; i < bookTextArray.Length + 1; i++)
             {
@@ -332,7 +332,7 @@ namespace Online_Book_Store
 
         private void btnAddMagazine_Click(object sender, EventArgs e)
         {
-         
+
 
             if (!checkWhiteSpace(bookTextArray))
             {
@@ -356,7 +356,7 @@ namespace Online_Book_Store
         private void btnAddMusicCd_Click(object sender, EventArgs e)
         {
 
-            if (!checkWhiteSpace(bookTextArray))
+            if (!checkWhiteSpace(musicCDTextArray))
             {
                 MessageBox.Show("Tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -510,15 +510,15 @@ namespace Online_Book_Store
             try
             {
                 string destpath = Application.StartupPath + @"\Resources\" + ID + ".jpg";
+
                 if (File.Exists(destpath))
                 {
                     File.Delete(destpath);
                 }
-                System.IO.File.Copy(ImagePath, destpath);
+                    System.IO.File.Copy(ImagePath, destpath);
             }
             catch (Exception)
             {
-
             }
         }
     }

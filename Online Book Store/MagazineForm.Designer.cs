@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.pbMagazine = new System.Windows.Forms.PictureBox();
-            this.lbCounter = new System.Windows.Forms.Label();
             this.txtCounter = new System.Windows.Forms.TextBox();
-            this.pbAddCart = new System.Windows.Forms.PictureBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtIsbn = new System.Windows.Forms.TextBox();
             this.txtCategory = new System.Windows.Forms.TextBox();
@@ -43,7 +41,6 @@
             this.txtContent = new System.Windows.Forms.TextBox();
             this.lbContent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbMagazine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddCart)).BeginInit();
             this.SuspendLayout();
             // 
             // pbMagazine
@@ -55,19 +52,6 @@
             this.pbMagazine.TabIndex = 1;
             this.pbMagazine.TabStop = false;
             // 
-            // lbCounter
-            // 
-            this.lbCounter.AutoSize = true;
-            this.lbCounter.BackColor = System.Drawing.Color.Transparent;
-            this.lbCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbCounter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbCounter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbCounter.Location = new System.Drawing.Point(229, 343);
-            this.lbCounter.Name = "lbCounter";
-            this.lbCounter.Size = new System.Drawing.Size(43, 19);
-            this.lbCounter.TabIndex = 37;
-            this.lbCounter.Text = "Adet:";
-            // 
             // txtCounter
             // 
             this.txtCounter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -78,16 +62,6 @@
             this.txtCounter.Name = "txtCounter";
             this.txtCounter.Size = new System.Drawing.Size(206, 19);
             this.txtCounter.TabIndex = 36;
-            // 
-            // pbAddCart
-            // 
-            this.pbAddCart.BackgroundImage = global::Online_Book_Store.Properties.Resources.showDetails;
-            this.pbAddCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbAddCart.Location = new System.Drawing.Point(537, 327);
-            this.pbAddCart.Name = "pbAddCart";
-            this.pbAddCart.Size = new System.Drawing.Size(40, 40);
-            this.pbAddCart.TabIndex = 35;
-            this.pbAddCart.TabStop = false;
             // 
             // txtPrice
             // 
@@ -226,9 +200,7 @@
             this.ClientSize = new System.Drawing.Size(602, 400);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.lbContent);
-            this.Controls.Add(this.lbCounter);
             this.Controls.Add(this.txtCounter);
-            this.Controls.Add(this.pbAddCart);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtIsbn);
             this.Controls.Add(this.txtCategory);
@@ -241,9 +213,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MagazineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MagazineForm";
+            this.Text = "Dergi Bilgileri";
             ((System.ComponentModel.ISupportInitialize)(this.pbMagazine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddCart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,9 +223,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbMagazine;
-        private System.Windows.Forms.Label lbCounter;
         private System.Windows.Forms.TextBox txtCounter;
-        private System.Windows.Forms.PictureBox pbAddCart;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtIsbn;
         private System.Windows.Forms.TextBox txtCategory;

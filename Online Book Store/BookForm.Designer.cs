@@ -45,12 +45,8 @@
             this.txtIsbn = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
-            this.pbAddCart = new System.Windows.Forms.PictureBox();
             this.txtCounter = new System.Windows.Forms.TextBox();
-            this.lbCount = new System.Windows.Forms.Label();
-            this.lbCounter = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddCart)).BeginInit();
             this.SuspendLayout();
             // 
             // pbBook
@@ -264,16 +260,6 @@
             this.txtContent.Size = new System.Drawing.Size(257, 328);
             this.txtContent.TabIndex = 16;
             // 
-            // pbAddCart
-            // 
-            this.pbAddCart.BackgroundImage = global::Online_Book_Store.Properties.Resources.showDetails;
-            this.pbAddCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbAddCart.Location = new System.Drawing.Point(546, 332);
-            this.pbAddCart.Name = "pbAddCart";
-            this.pbAddCart.Size = new System.Drawing.Size(40, 40);
-            this.pbAddCart.TabIndex = 17;
-            this.pbAddCart.TabStop = false;
-            // 
             // txtCounter
             // 
             this.txtCounter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -285,31 +271,6 @@
             this.txtCounter.Size = new System.Drawing.Size(167, 19);
             this.txtCounter.TabIndex = 18;
             // 
-            // lbCount
-            // 
-            this.lbCount.AutoSize = true;
-            this.lbCount.BackColor = System.Drawing.Color.Transparent;
-            this.lbCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbCount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbCount.Location = new System.Drawing.Point(238, 2306);
-            this.lbCount.Name = "lbCount";
-            this.lbCount.Size = new System.Drawing.Size(43, 19);
-            this.lbCount.TabIndex = 19;
-            this.lbCount.Text = "Adet:";
-            // 
-            // lbCounter
-            // 
-            this.lbCounter.AutoSize = true;
-            this.lbCounter.BackColor = System.Drawing.Color.Transparent;
-            this.lbCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbCounter.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbCounter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.lbCounter.Location = new System.Drawing.Point(238, 343);
-            this.lbCounter.Name = "lbCounter";
-            this.lbCounter.Size = new System.Drawing.Size(43, 19);
-            this.lbCounter.TabIndex = 20;
-            this.lbCounter.Text = "Adet:";
-            // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,11 +278,8 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(926, 508);
-            this.Controls.Add(this.lbCounter);
-            this.Controls.Add(this.lbCount);
+            this.ClientSize = new System.Drawing.Size(931, 553);
             this.Controls.Add(this.txtCounter);
-            this.Controls.Add(this.pbAddCart);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtIsbn);
@@ -342,9 +300,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BookForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BookForm";
+            this.Text = "Kitap Bilgileri";
             ((System.ComponentModel.ISupportInitialize)(this.pbBook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddCart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,9 +326,6 @@
         private System.Windows.Forms.TextBox txtIsbn;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtContent;
-        private System.Windows.Forms.PictureBox pbAddCart;
         private System.Windows.Forms.TextBox txtCounter;
-        private System.Windows.Forms.Label lbCount;
-        private System.Windows.Forms.Label lbCounter;
     }
 }
