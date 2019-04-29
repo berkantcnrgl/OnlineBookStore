@@ -31,7 +31,7 @@ namespace Online_Book_Store
             Show_Details = new PictureBox();
             Show_Details.Size = new Size(32, 32);
             Show_Details.BackgroundImage = Properties.Resources.loupe;
-            Show_Details.BackgroundImageLayout = ImageLayout.Zoom;
+            Show_Details.BackgroundImageLayout = ImageLayout.Stretch;
             Show_Details.Cursor = Cursors.Hand;
             Show_Details.BackColor = Color.Transparent;
             Show_Details.Click += new EventHandler(panelClick);
@@ -72,7 +72,7 @@ namespace Online_Book_Store
             Add_Cart = new PictureBox();
             Add_Cart.Size = new Size(32, 32);
             Add_Cart.BackgroundImage = Properties.Resources.showDetails;
-            Add_Cart.BackgroundImageLayout = ImageLayout.Zoom;
+            Add_Cart.BackgroundImageLayout = ImageLayout.Stretch;
             Add_Cart.Cursor = Cursors.Hand;
             Add_Cart.BackColor = Color.Transparent;
             Add_Cart.Click += new EventHandler(addCart);
@@ -95,18 +95,25 @@ namespace Online_Book_Store
 
         private void panelClick(object sender, EventArgs e)
         {
-            Logger.logger(musicCD.Name + " Panel Magnifier");
             musicCD.ShowDetails();
-        }
-
-        void playBtnClick(object sender, EventArgs e)
-        {
-
         }
 
         void addCart(object sender, EventArgs e)
         {
-
+            foreach (var it in MainForm.ShoppingCart.ItemsToPurchase)
+            {
+                if (it.Product == this.musicCD)
+                {
+                    it.Quantity++;
+                    MessageBox.Show(it.Product.Name.Trim() + " sepetinize eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+            ItemToPurchase item = new ItemToPurchase();
+            item.Product = this.musicCD;
+            item.Quantity = 1;
+            MainForm.ShoppingCart.ItemsToPurchase.Add(item);
+            MessageBox.Show(item.Product.Name.Trim() + " sepetinize eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }

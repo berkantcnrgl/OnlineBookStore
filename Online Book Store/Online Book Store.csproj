@@ -69,8 +69,13 @@
     <Compile Include="FormSignUp.Designer.cs">
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceForm.Designer.cs">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemToPurchase.cs" />
-    <Compile Include="Logger.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +123,9 @@
     <Compile Include="ShoppingCartFormcs.Designer.cs">
       <DependentUpon>ShoppingCartFormcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingCartPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSignUp.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceForm.resx">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

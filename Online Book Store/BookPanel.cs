@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +30,7 @@ namespace Online_Book_Store
             Show_Details = new PictureBox();
             Show_Details.Size = new Size(32, 32);
             Show_Details.BackgroundImage = Properties.Resources.loupe;
-            Show_Details.BackgroundImageLayout = ImageLayout.Zoom;
+            Show_Details.BackgroundImageLayout = ImageLayout.Stretch;
             Show_Details.Cursor = Cursors.Hand;
             Show_Details.BackColor = Color.Transparent;
             Show_Details.Click += new EventHandler(Show_DetailsClick);
@@ -39,7 +39,7 @@ namespace Online_Book_Store
             Add_Cart.Size = new Size(32, 32);
             Add_Cart.BackColor = Color.Transparent;
             Add_Cart.BackgroundImage = Properties.Resources.showDetails;
-            Add_Cart.BackgroundImageLayout = ImageLayout.Zoom;
+            Add_Cart.BackgroundImageLayout = ImageLayout.Stretch;
             Add_Cart.Cursor = Cursors.Hand;
             Add_Cart.Click += new EventHandler(Add_CartClick);
 
@@ -84,13 +84,25 @@ namespace Online_Book_Store
 
         void Show_DetailsClick(object sender, EventArgs e)
         {
-            Logger.logger(book.Name + " Panel Magnifier");
             book.ShowDetails();
         }
 
         void Add_CartClick(object sender, EventArgs e)
         {
-
+            foreach (var it in MainForm.ShoppingCart.ItemsToPurchase)
+            {
+                if (it.Product == this.book)
+                {
+                    it.Quantity++;
+                    MessageBox.Show(it.Product.Name.Trim() + " sepetinize eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+            ItemToPurchase item = new ItemToPurchase();
+            item.Product = this.book;
+            item.Quantity = 1;
+            MainForm.ShoppingCart.ItemsToPurchase.Add(item);
+            MessageBox.Show(item.Product.Name.Trim() + " sepetinize eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }

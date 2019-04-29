@@ -78,7 +78,6 @@ namespace Online_Book_Store
             }
             else
             {
-                Logger.logger("Profile Form Update");
                 customer.Name = txtName.Text;
                 customer.Username = txtUsername.Text;
                 customer.Surname = txtSurname.Text;

@@ -26,12 +26,25 @@ namespace Online_Book_Store
         PanelProductCreator panelCreator;
         ArrayList productList;
         public static bool IsAdmin;
+        private static ShoppingCart shoppingCart;
+
+        internal static ShoppingCart ShoppingCart
+        { get
+            {
+                return shoppingCart;
+            }
+            set
+            {
+                shoppingCart = value;
+            }
+        }
 
         public MainForm(Customer customer)
         {
             InitializeComponent();
             user = customer;
             CurrentProductList = new List<Product>();
+            shoppingCart = new ShoppingCart();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -78,11 +91,6 @@ namespace Online_Book_Store
             btnShoppingCart.ForeColor = Color.FromArgb(34, 36, 49);
         }
 
-        private void btnPrevPurchases_MouseEnter(object sender, EventArgs e)
-        {
-            btnPrevPurchases.ForeColor = Color.FromArgb(34, 36, 49);
-        }
-
         private void btnLogout_MouseEnter(object sender, EventArgs e)
         {
             btnLogout.ForeColor = Color.FromArgb(34, 36, 49);
@@ -101,11 +109,6 @@ namespace Online_Book_Store
         private void btnShoppingCart_MouseLeave(object sender, EventArgs e)
         {
             btnShoppingCart.ForeColor = Color.FromArgb(255, 255, 255);
-        }
-
-        private void btnPrevPurchases_MouseLeave(object sender, EventArgs e)
-        {
-            btnPrevPurchases.ForeColor = Color.FromArgb(255, 255, 255);
         }
 
         private void btnLogout_MouseLeave(object sender, EventArgs e)
@@ -169,19 +172,16 @@ namespace Online_Book_Store
         private void btnUserProfile_Click(object sender, EventArgs e)
         {         
             UserProfileForm userProfile = new UserProfileForm(user);
-            Logger.logger(" Main Form My Profile");
             user.printCustomerDetails(user);
-
         }
 
         private void btnShoppingCart_Click(object sender, EventArgs e)
         {
-
+            shoppingCart.ShowProducts();
         }
 
         private void btnAdminProfile_Click(object sender, EventArgs e)
         {
-            Logger.logger(" Main Form Root");           
             AdminProfileForm root = new AdminProfileForm();
             root.ShowDialog();
             booklist.Clear();
@@ -204,5 +204,6 @@ namespace Online_Book_Store
         {
             DialogResult = DialogResult.Cancel;
         }
+
     }
 }

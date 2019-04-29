@@ -24,6 +24,20 @@ namespace Online_Book_Store
                 databaseObject = value;
             }
         }
+
+        internal static Customer Customer
+        {
+            get
+            {
+                return customer;
+            }
+            set
+            {
+                customer = value;
+            }
+        }
+        private static Customer customer = new Customer();
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -61,13 +75,11 @@ namespace Online_Book_Store
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Customer loginedCustomer = new Customer();
-            Customer customer = databaseObject.GetCustomer(txtUsername.Text, txtPassword.Text);
-            if (customer != null)
+            Customer = databaseObject.GetCustomer(txtUsername.Text, txtPassword.Text);
+            if (Customer != null)
             {
                 this.Hide();
-                loginedCustomer = customer;
-                Logger.logger("Login");
-                MainForm mainform = new MainForm(customer);
+                loginedCustomer = Customer;                MainForm mainform = new MainForm(Customer);
                 mainform.ShowDialog();
                 mainform = null;
                 GC.Collect();

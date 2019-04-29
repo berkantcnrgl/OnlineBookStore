@@ -6,35 +6,20 @@ using System.Threading.Tasks;
 
 namespace Online_Book_Store
 {
-    class ItemToPurchase
+    public class ItemToPurchase
     {
-        private string product;
-        private string quantity;
+        private Product product;
+        private int quantity;
 
-        public string Product
+        public int Quantity
         {
-            get
-            {
-                return product;
-            }
-
-            set
-            {
-                product = value;
-            }
+            get { return quantity; }
+            set { quantity = value; }
         }
-
-        public string Quantity
+        public Product Product
         {
-            get
-            {
-                return quantity;
-            }
-
-            set
-            {
-                quantity = value;
-            }
+            get { return product; }
+            set { product = value; }
         }
     }
 }
