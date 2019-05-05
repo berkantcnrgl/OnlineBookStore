@@ -79,7 +79,8 @@ namespace Online_Book_Store
             if (Customer != null)
             {
                 this.Hide();
-                loginedCustomer = Customer;                MainForm mainform = new MainForm(Customer);
+                loginedCustomer = Customer;
+                MainForm mainform = new MainForm(Customer);
                 mainform.ShowDialog();
                 mainform = null;
                 GC.Collect();

@@ -159,6 +159,70 @@ namespace Online_Book_Store
             return counter;
         }
 
+        public Customer GetCustomerWtihEmail(string username, string email)
+        {
+            Customer customer = null;
+            try
+            {
+                sqlConnection = new SqlConnection(connectionString);
+                sqlConnection.Open();
+                command = new SqlCommand("SELECT * FROM [dbo].[Customer] where Username = @UserName", sqlConnection);
+                command.Parameters.AddWithValue("UserName", username);
+                sqlDataReader = command.ExecuteReader();
+                sqlDataReader.Read();
+                if (email == (string)sqlDataReader["Email"].ToString().Trim())
+                {
+                    customer = new Customer();
+                    if (!DBNull.Value.Equals(sqlDataReader["Id"]))
+                    {
+                        customer.CustomerID = (int)sqlDataReader["Id"];
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Name"]))
+                    {
+                        customer.Name = (string)sqlDataReader["Name"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Surname"]))
+                    {
+                        customer.Surname = (string)sqlDataReader["Surname"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Address"]))
+                    {
+                        customer.Address = (string)sqlDataReader["Address"].ToString().Trim();
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["Email"]))
+                    {
+                        customer.Email = (string)sqlDataReader["Email"].ToString().Trim();
+                    }
+                    customer.Username = (string)sqlDataReader["Username"].ToString().Trim();
+                    customer.Password = (string)sqlDataReader["Password"].ToString().Trim();
+                    if (!DBNull.Value.Equals(sqlDataReader["PurchasesCounter"]))
+                    {
+                        customer.PurchasesCounter = (int)sqlDataReader["PurchasesCounter"];
+                    }
+                    if (!DBNull.Value.Equals(sqlDataReader["IsAdmin"]))
+                    {
+                        if ((int)sqlDataReader["IsAdmin"] == 1)
+                        {
+                            MainForm.IsAdmin = true;
+                            customer.IsAdmin = true;
+                        }
+                        else
+                        {
+                            MainForm.IsAdmin = false;
+                            customer.IsAdmin = false;
+                        }
+                    }
+
+                }
+            }
+            catch (Exception)   // catch (exception ex)
+            {
+
+            }
+            sqlConnection.Close();
+            return customer;
+        }
+
         public Customer GetCustomer(string username, string password)
         {
             Customer customer = null;
@@ -196,7 +260,6 @@ namespace Online_Book_Store
                     }
                     customer.Username = (string)sqlDataReader["Username"].ToString().Trim();
                     customer.Password = (string)sqlDataReader["Password"].ToString().Trim();
-
                     if (!DBNull.Value.Equals(sqlDataReader["PurchasesCounter"]))
                     {
                         customer.PurchasesCounter = (int)sqlDataReader["PurchasesCounter"];
