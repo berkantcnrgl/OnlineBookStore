@@ -92,5 +92,45 @@ namespace Online_Book_Store
                 MessageBox.Show("Kullanıcı adı veya Şifre yanlış !", "Giriş Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnForgotPassword_MouseEnter(object sender, EventArgs e)
+        {
+            btnForgotPassword.Font = new Font("Calibri", 13);
+        }
+
+        private void btnForgotPassword_MouseLeave(object sender, EventArgs e)
+        {
+            btnForgotPassword.Font = new Font("Calibri",11,FontStyle.Underline);
+        }
+
+        private void btnSingUp_MouseEnter(object sender, EventArgs e)
+        {
+            btnSingUp.Font=new Font("Calibri", 16);
+        }
+
+        private void btnSingUp_MouseLeave(object sender, EventArgs e)
+        {
+            btnSingUp.Font = new Font("Calibri", 13);
+        }
+
+        public void ForgotMyPasswordScreen()
+        {
+            if(this.Opacity!=0)
+            {
+                this.Opacity=0;
+            }
+              
+           else if(this.Opacity!=100)
+            {
+                this.Opacity=100;
+            }
+        }
+
+        private void btnForgotPassword_Click(object sender, EventArgs e)
+        {
+            ForgotMyPasswordScreen();
+            ForgotPasswordForm fpf = new ForgotPasswordForm(this);
+            fpf.Show();
+        }
     }
 }

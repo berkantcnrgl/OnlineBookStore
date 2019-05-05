@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookForm.resx">
       <DependentUpon>BookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSignUp.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
@@ -272,6 +281,8 @@
   <ItemGroup>
     <Content Include="Resources\152120191000.jpg" />
     <Content Include="Resources\152320191006.jpg" />
+    <None Include="Resources\success-checked-interface-icon-6156-512x512.png" />
+    <None Include="Resources\21321.png" />
     <None Include="Resources\1523201910051.jpg" />
     <None Include="Resources\1523201910041.jpg" />
     <None Include="Resources\1523201910031.jpg" />

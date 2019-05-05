@@ -253,6 +253,16 @@ namespace Online_Book_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _21321 {
+            get {
+                object obj = ResourceManager.GetObject("21321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _822da3f8b3205b5d717169e23ce6c865 {
             get {
                 object obj = ResourceManager.GetObject("822da3f8b3205b5d717169e23ce6c865", resourceCulture);
@@ -276,6 +286,16 @@ namespace Online_Book_Store.Properties {
         internal static System.Drawing.Bitmap bookshelf {
             get {
                 object obj = ResourceManager.GetObject("bookshelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bookshelf1 {
+            get {
+                object obj = ResourceManager.GetObject("bookshelf1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +526,16 @@ namespace Online_Book_Store.Properties {
         internal static System.Drawing.Bitmap stand_by {
             get {
                 object obj = ResourceManager.GetObject("stand-by", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap success_checked_interface_icon_6156_512x512 {
+            get {
+                object obj = ResourceManager.GetObject("success-checked-interface-icon-6156-512x512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

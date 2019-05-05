@@ -55,10 +55,10 @@
             this.pnlUser.Controls.Add(this.btnLogout);
             this.pnlUser.Controls.Add(this.btnShoppingCart);
             this.pnlUser.Controls.Add(this.btnUserProfile);
-            this.pnlUser.Location = new System.Drawing.Point(0, 190);
-            this.pnlUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlUser.Location = new System.Drawing.Point(0, 154);
+            this.pnlUser.Margin = new System.Windows.Forms.Padding(2);
             this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(300, 725);
+            this.pnlUser.Size = new System.Drawing.Size(225, 589);
             this.pnlUser.TabIndex = 0;
             // 
             // lbUsername
@@ -66,9 +66,10 @@
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(45, 609);
+            this.lbUsername.Location = new System.Drawing.Point(34, 495);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(118, 31);
+            this.lbUsername.Size = new System.Drawing.Size(95, 24);
             this.lbUsername.TabIndex = 4;
             this.lbUsername.Text = "Username";
             // 
@@ -82,10 +83,10 @@
             this.btnAdminProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAdminProfile.ForeColor = System.Drawing.Color.White;
-            this.btnAdminProfile.Location = new System.Drawing.Point(0, 252);
-            this.btnAdminProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdminProfile.Location = new System.Drawing.Point(0, 205);
+            this.btnAdminProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdminProfile.Name = "btnAdminProfile";
-            this.btnAdminProfile.Size = new System.Drawing.Size(300, 80);
+            this.btnAdminProfile.Size = new System.Drawing.Size(225, 65);
             this.btnAdminProfile.TabIndex = 3;
             this.btnAdminProfile.Text = "Yönetici Profili";
             this.btnAdminProfile.UseVisualStyleBackColor = true;
@@ -103,10 +104,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(0, 168);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Location = new System.Drawing.Point(0, 136);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(300, 80);
+            this.btnLogout.Size = new System.Drawing.Size(225, 65);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Çıkış Yap";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -124,10 +125,10 @@
             this.btnShoppingCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShoppingCart.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnShoppingCart.ForeColor = System.Drawing.Color.White;
-            this.btnShoppingCart.Location = new System.Drawing.Point(0, 84);
-            this.btnShoppingCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnShoppingCart.Location = new System.Drawing.Point(0, 68);
+            this.btnShoppingCart.Margin = new System.Windows.Forms.Padding(2);
             this.btnShoppingCart.Name = "btnShoppingCart";
-            this.btnShoppingCart.Size = new System.Drawing.Size(300, 80);
+            this.btnShoppingCart.Size = new System.Drawing.Size(225, 65);
             this.btnShoppingCart.TabIndex = 1;
             this.btnShoppingCart.Text = "Alışveriş Sepeti";
             this.btnShoppingCart.UseVisualStyleBackColor = true;
@@ -146,9 +147,9 @@
             this.btnUserProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUserProfile.ForeColor = System.Drawing.Color.White;
             this.btnUserProfile.Location = new System.Drawing.Point(0, 0);
-            this.btnUserProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUserProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnUserProfile.Name = "btnUserProfile";
-            this.btnUserProfile.Size = new System.Drawing.Size(300, 80);
+            this.btnUserProfile.Size = new System.Drawing.Size(225, 65);
             this.btnUserProfile.TabIndex = 0;
             this.btnUserProfile.Text = "Kullanıcı Profili";
             this.btnUserProfile.UseVisualStyleBackColor = true;
@@ -162,27 +163,27 @@
             this.pnlLogo.Controls.Add(this.panel1);
             this.pnlLogo.Controls.Add(this.pbLogo);
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(300, 190);
+            this.pnlLogo.Size = new System.Drawing.Size(225, 154);
             this.pnlLogo.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(299, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(224, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(888, 34);
+            this.panel1.Size = new System.Drawing.Size(666, 28);
             this.panel1.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(921, 34);
+            this.panel2.Size = new System.Drawing.Size(691, 28);
             this.panel2.TabIndex = 2;
             // 
             // pbLogo
@@ -190,10 +191,10 @@
             this.pbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbLogo.BackgroundImage = global::Online_Book_Store.Properties.Resources.siyah;
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(51, 15);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.Location = new System.Drawing.Point(38, 12);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(200, 160);
+            this.pbLogo.Size = new System.Drawing.Size(150, 130);
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
             // 
@@ -201,10 +202,10 @@
             // 
             this.flpnlItems.AutoScroll = true;
             this.flpnlItems.BackColor = System.Drawing.Color.Transparent;
-            this.flpnlItems.Location = new System.Drawing.Point(307, 116);
-            this.flpnlItems.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flpnlItems.Location = new System.Drawing.Point(230, 94);
+            this.flpnlItems.Margin = new System.Windows.Forms.Padding(2);
             this.flpnlItems.Name = "flpnlItems";
-            this.flpnlItems.Size = new System.Drawing.Size(1260, 780);
+            this.flpnlItems.Size = new System.Drawing.Size(945, 634);
             this.flpnlItems.TabIndex = 12;
             // 
             // cmbProduct
@@ -219,10 +220,10 @@
             "Kitap",
             "Dergi",
             "Müzik CD"});
-            this.cmbProduct.Location = new System.Drawing.Point(311, 50);
-            this.cmbProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbProduct.Location = new System.Drawing.Point(233, 41);
+            this.cmbProduct.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProduct.Name = "cmbProduct";
-            this.cmbProduct.Size = new System.Drawing.Size(219, 35);
+            this.cmbProduct.Size = new System.Drawing.Size(165, 30);
             this.cmbProduct.TabIndex = 13;
             this.cmbProduct.SelectedIndexChanged += new System.EventHandler(this.cmbProduct_SelectedIndexChanged);
             // 
@@ -234,29 +235,29 @@
             this.cmbCategory.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbCategory.ForeColor = System.Drawing.Color.White;
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(536, 50);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbCategory.Location = new System.Drawing.Point(402, 41);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(219, 35);
+            this.cmbCategory.Size = new System.Drawing.Size(165, 30);
             this.cmbCategory.TabIndex = 14;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1600, 910);
+            this.ClientSize = new System.Drawing.Size(1217, 739);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.cmbProduct);
             this.Controls.Add(this.flpnlItems);
             this.Controls.Add(this.pnlLogo);
             this.Controls.Add(this.pnlUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Menü";

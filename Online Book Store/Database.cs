@@ -217,7 +217,7 @@ namespace Online_Book_Store
                    
                 }              
             }
-            catch (Exception ex)
+            catch (Exception)   // catch (exception ex)
             {
                 
             }

@@ -204,6 +204,5 @@ namespace Online_Book_Store
         {
             DialogResult = DialogResult.Cancel;
         }
-
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnForgotPassword = new System.Windows.Forms.Button();
             this.btnSingUp = new System.Windows.Forms.Button();
             this.txtDesign4 = new System.Windows.Forms.TextBox();
             this.txtDesign3 = new System.Windows.Forms.TextBox();
@@ -47,6 +48,7 @@
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.pnlLogin.Controls.Add(this.btnForgotPassword);
             this.pnlLogin.Controls.Add(this.btnSingUp);
             this.pnlLogin.Controls.Add(this.txtDesign4);
             this.pnlLogin.Controls.Add(this.txtDesign3);
@@ -64,6 +66,28 @@
             this.pnlLogin.Size = new System.Drawing.Size(375, 569);
             this.pnlLogin.TabIndex = 7;
             // 
+            // btnForgotPassword
+            // 
+            this.btnForgotPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnForgotPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnForgotPassword.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnForgotPassword.FlatAppearance.BorderSize = 0;
+            this.btnForgotPassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnForgotPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForgotPassword.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Underline);
+            this.btnForgotPassword.ForeColor = System.Drawing.Color.White;
+            this.btnForgotPassword.Location = new System.Drawing.Point(102, 510);
+            this.btnForgotPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.btnForgotPassword.Name = "btnForgotPassword";
+            this.btnForgotPassword.Size = new System.Drawing.Size(179, 32);
+            this.btnForgotPassword.TabIndex = 16;
+            this.btnForgotPassword.Text = "Şifremi Unuttum";
+            this.btnForgotPassword.UseVisualStyleBackColor = false;
+            this.btnForgotPassword.Click += new System.EventHandler(this.btnForgotPassword_Click);
+            this.btnForgotPassword.MouseEnter += new System.EventHandler(this.btnForgotPassword_MouseEnter);
+            this.btnForgotPassword.MouseLeave += new System.EventHandler(this.btnForgotPassword_MouseLeave);
+            // 
             // btnSingUp
             // 
             this.btnSingUp.BackColor = System.Drawing.Color.Transparent;
@@ -73,7 +97,7 @@
             this.btnSingUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSingUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSingUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSingUp.Font = new System.Drawing.Font("Calibri", 12.8F);
+            this.btnSingUp.Font = new System.Drawing.Font("Calibri", 13F);
             this.btnSingUp.ForeColor = System.Drawing.Color.White;
             this.btnSingUp.Location = new System.Drawing.Point(141, 474);
             this.btnSingUp.Margin = new System.Windows.Forms.Padding(2);
@@ -83,6 +107,8 @@
             this.btnSingUp.Text = "Kayıt Ol";
             this.btnSingUp.UseVisualStyleBackColor = false;
             this.btnSingUp.Click += new System.EventHandler(this.btnSingUp_Click);
+            this.btnSingUp.MouseEnter += new System.EventHandler(this.btnSingUp_MouseEnter);
+            this.btnSingUp.MouseLeave += new System.EventHandler(this.btnSingUp_MouseLeave);
             // 
             // txtDesign4
             // 
@@ -201,7 +227,7 @@
             this.pbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbLogo.BackgroundImage = global::Online_Book_Store.Properties.Resources.siyah;
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogo.Location = new System.Drawing.Point(112, 41);
+            this.pbLogo.Location = new System.Drawing.Point(122, 33);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(150, 130);
@@ -245,6 +271,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Button btnSingUp;
+        private System.Windows.Forms.Button btnForgotPassword;
     }
 }
 
