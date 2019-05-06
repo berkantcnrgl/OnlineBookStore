@@ -130,7 +130,7 @@ namespace Online_Book_Store
         private void btnForgotPassword_Click(object sender, EventArgs e)
         {
             ForgotMyPasswordScreen();
-            ForgotPasswordForm fpf = new ForgotPasswordForm(this);
+            FormForgotPassword fpf = new FormForgotPassword(this);
             fpf.Show();
         }
     }
